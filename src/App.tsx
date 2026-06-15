@@ -90,7 +90,7 @@ function Nav() {
     <header className="relative z-30 section-light">
       <Container className="flex items-center justify-between py-6">
         <a href="#top" className="flex items-center gap-2">
-          <img src={logoImg} alt="Decide Agora" className="h-44 w-auto object-contain" />
+          <img src={logoImg} alt="Decide Agora" className="h-64 w-auto object-contain" />
         </a>
         <nav className="hidden items-center gap-8 text-sm text-[var(--color-ink-soft)] md:flex">
           <a href="#metodo" className="hover:text-[var(--color-foreground)]">Método</a>
@@ -769,21 +769,30 @@ function Autoridade() {
               Quem criou este método{" "}
               <span className="font-italic-serif text-[var(--color-plum)]">e por quê.</span>
             </h2>
-            <p className="mt-6 text-[15px] leading-relaxed text-[var(--color-ink-soft)]">
-              <strong className="text-[var(--color-foreground)]">Licia Santos.</strong> Mestre em
-              Engenharia e pós-graduada em Neurogestão.
-            </p>
-            <div className="mt-5 space-y-4 text-[15px] leading-relaxed text-[var(--color-ink-soft)]">
+            <div className="mt-6 space-y-4 text-[15px] leading-relaxed text-[var(--color-ink-soft)]">
               <p>
-                Durante anos, Licia foi a mulher que sabia analisar qualquer problema com
-                precisão técnica, mas travava nas próprias decisões.
+                Durante anos eu tomei decisões que impactavam milhões de reais dentro de uma multinacional.
               </p>
               <p>
-                A combinação de rigor técnico de uma Mestre em Engenharia com a aplicação
-                clínica da Neurogestão é o que diferencia este desafio.
+                Mas existia uma área da minha vida onde eu continuava travando: as minhas próprias escolhas.
+                Eu analisava demais. Buscava a opinião de todo mundo. Tinha medo de errar.
               </p>
               <p>
-                O Método Decide Agora foi desenvolvido a partir da própria experiência de Licia.
+                Até perceber que o problema não era falta de inteligência, conhecimento ou capacidade.
+                Era falta de confiança.
+              </p>
+              <p>
+                Foi estudando tomada de decisão no mestrado, comportamento humano e Neurogestão que comecei
+                a entender por que tantas mulheres inteligentes se sentem presas, mesmo sabendo exatamente
+                o que deveriam fazer.
+              </p>
+              <p>
+                O Método Decide Agora nasceu dessa busca. Para ajudar mulheres que estão cansadas de pensar
+                demais, duvidar de si mesmas e adiar decisões importantes.
+              </p>
+              <p>
+                Porque a sua vida começa a mudar quando você para de esperar ter certeza absoluta e aprende
+                a confiar mais em quem você é.
               </p>
             </div>
           </div>
@@ -901,7 +910,7 @@ function Garantia() {
   return (
     <section className="section-light py-12 md:py-28">
       <Container>
-        <div className="grid items-center gap-10 rounded-3xl bg-[var(--color-surface)] p-8 md:grid-cols-[auto_1fr] md:gap-14 md:p-14">
+        <div className="grid items-center gap-10 rounded-3xl bg-[#ede5db] p-8 md:grid-cols-[auto_1fr] md:gap-14 md:p-14">
           <div className="mx-auto">
             <img src={garantiaImg} alt="Selo de garantia 7 dias" className="h-44 w-44 object-contain" />
           </div>
@@ -1009,7 +1018,9 @@ function FAQ() {
 
 function CTAFinal() {
   return (
-    <section className="relative overflow-hidden py-14 md:py-36 bg-[#2d0f28]">
+    <section className="section-dark relative overflow-hidden py-14 md:py-36">
+      <img src={doorwayImg} alt="" className="absolute inset-0 h-full w-full object-cover opacity-25" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-background)] via-[var(--color-background)]/85 to-[var(--color-background)]/60" />
       <Container className="relative">
         <div className="mx-auto max-w-3xl text-center">
           <Eyebrow>Sua próxima decisão</Eyebrow>
@@ -1017,7 +1028,7 @@ function CTAFinal() {
             A vida está passando enquanto você{" "}
             <span className="font-italic-serif text-[var(--color-gold)]">"se prepara".</span>
           </h2>
-          <p className="mt-6 text-[16px] leading-relaxed text-[var(--color-muted-foreground)]">
+          <p className="mt-6 text-[16px] leading-relaxed text-[var(--color-ink-soft)]">
             Em 30 dias, você pode estar do outro lado dessa porta. Decidindo sem precisar pedir
             permissão.
           </p>
