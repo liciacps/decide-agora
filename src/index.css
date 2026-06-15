@@ -10,11 +10,11 @@
     --color-primary-foreground: #ffffff;
     --color-ink-soft: #5a5a5a;
     --color-muted-foreground: #8a8a8a;
-    --color-surface: #f8f8f8;
-    --color-surface-raised: #ffffff;
-    --color-hairline: #e5e5e5;
-    --color-muted: #e0e0e0;
-    --color-background: #fafafa;
+    --color-surface: #f0e8e0;
+    --color-surface-raised: #f5efe8;
+    --color-hairline: #ddd0c4;
+    --color-muted: #ddd0c4;
+    --color-background: #f5efe8;
   }
 
   * {

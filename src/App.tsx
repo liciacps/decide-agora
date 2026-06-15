@@ -19,7 +19,7 @@ const heroImg = "/mqd-hero-DW0UWT_S.jpg";
 const creatorImg = "/Captura_de_tela_2026-06-11_161258.png";
 const journalImg = "/mqd-journal-B_3cC0rt.jpg";
 const writingImg = "/mqd-writing-CmqmvkGe.jpg";
-const logoImg = "/logo-decide-agora.png";
+const logoImg = "/logo-nova.png";
 const doorwayImg = "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1200";
 
 const avatarImgs = [
@@ -279,7 +279,9 @@ function ProvaSocial1() {
                 <p><span className="font-medium text-[var(--color-foreground)]">Resultado:</span> {p.result}</p>
               </div>
               <div className="mt-6 flex items-center gap-3 border-t border-[var(--color-hairline)] pt-5">
-                <img src={p.avatar} alt={p.name} className="size-12 rounded-full object-cover" />
+                <div className="size-12 rounded-full bg-[var(--color-plum)] flex items-center justify-center shrink-0">
+                    <span className="text-white font-medium text-sm">{p.name.split(' ').map((n: string) => n[0]).slice(0,2).join('')}</span>
+                  </div>
                 <div>
                   <div className="text-sm font-medium">{p.name}</div>
                   <div className="text-xs text-[var(--color-muted-foreground)]">{p.age}</div>
@@ -627,9 +629,9 @@ function Bonus() {
               key={b.title}
               className="group relative overflow-hidden rounded-3xl bg-[var(--color-surface-raised)] p-8 shadow-float"
             >
-              <div className="flex items-start gap-6">
-                <img src={b.img} alt={b.title} className="h-44 w-32 shrink-0 rounded-md object-cover shadow-md" />
-                <div>
+              <div className="flex flex-col items-center gap-5">
+                <img src={b.img} alt={b.title} className="w-full h-56 rounded-xl object-contain shadow-md" />
+                <div className="w-full">
                   <span className="text-[10px] uppercase tracking-[0.22em] text-[var(--color-gold)]">{b.tag}</span>
                   <h3 className="font-display mt-2 text-2xl leading-tight">{b.title}</h3>
                   <p className="mt-3 text-[14px] leading-relaxed text-[var(--color-ink-soft)]">{b.desc}</p>
@@ -718,7 +720,9 @@ function Depoimentos() {
               className="rounded-2xl border border-[var(--color-hairline)] bg-[var(--color-surface-raised)] p-8"
             >
               <div className="flex items-center gap-3">
-                <img src={d.avatar} alt={d.name} className="size-12 rounded-full object-cover" />
+                <div className="size-12 rounded-full bg-[var(--color-plum)] flex items-center justify-center shrink-0">
+                    <span className="text-white font-medium text-sm">{d.name.split(' ').map((n: string) => n[0]).slice(0,2).join('')}</span>
+                  </div>
                 <div>
                   <div className="text-sm font-medium">{d.name}</div>
                   <div className="text-xs text-[var(--color-muted-foreground)]">{d.age}</div>
@@ -862,7 +866,7 @@ function Oferta() {
             </li>
           </ul>
 
-          <div className="border-t border-white/10 bg-[var(--color-plum)] p-8 text-center md:p-12">
+          <div className="border-t border-white/10 bg-[#3b1a35] p-8 text-center md:p-12">
             <div className="text-[11px] uppercase tracking-[0.22em] text-[var(--color-gold)]">
               Preço hoje
             </div>
