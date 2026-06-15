@@ -1058,7 +1058,10 @@ function Footer() {
       <Container className="flex flex-col items-center justify-between gap-6 md:flex-row">
         <img src={logoImg} alt="Decide Agora" className="h-12 w-auto" />
         <p className="text-center text-xs text-[var(--color-muted-foreground)]">
-          Ao continuar, você concorda com os termos de uso e a política de privacidade.
+          Ao continuar, você concorda com os{" "}
+          <a href="https://docs.google.com/document/d/1eJUnG-jSLtyqxlTaHvjvdx4dlSsCMiJJ/edit?usp=sharing&ouid=102952477424481436790&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" className="underline hover:text-[var(--color-plum)]">
+            termos de uso e política de privacidade
+          </a>.
           <br />© {new Date().getFullYear()} Mulher que Decide. Todos os direitos reservados.
         </p>
       </Container>
