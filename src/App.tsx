@@ -90,7 +90,7 @@ function Nav() {
     <header className="relative z-30 section-light">
       <Container className="flex items-center justify-between py-6">
         <a href="#top" className="flex items-center gap-2">
-          <img src={logoImg} alt="Decide Agora" className="h-28 w-auto object-contain" />
+          <img src={logoImg} alt="Decide Agora" className="h-44 w-auto object-contain" />
         </a>
         <nav className="hidden items-center gap-8 text-sm text-[var(--color-ink-soft)] md:flex">
           <a href="#metodo" className="hover:text-[var(--color-foreground)]">Método</a>
@@ -111,7 +111,7 @@ function Hero() {
     <section id="top" className="section-light relative overflow-hidden pt-6 pb-20 md:pt-8 md:pb-28">
       <Container>
         <div className="grid items-center gap-12 md:grid-cols-[1.05fr_0.95fr]">
-          <div className="fade-up">
+          <div className="fade-up order-2 md:order-1">
             <Eyebrow>Desafio 30 Dias</Eyebrow>
             <h1 className="display display-tight mt-5 text-[44px] sm:text-[56px] md:text-[68px]">
               Existe uma mulher inteira
@@ -147,7 +147,7 @@ function Hero() {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative order-1 md:order-2">
             <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-[var(--color-plum)]/8 blur-2xl" />
             <div className="overflow-hidden rounded-[1.5rem] shadow-float">
               <img
@@ -182,7 +182,7 @@ function Hero() {
 
 function Dor() {
   return (
-    <section className="section-dark relative overflow-hidden py-24 md:py-32">
+    <section className="section-dark relative overflow-hidden py-12 md:py-32">
       <div className="absolute inset-0 grain opacity-40" />
       <Container className="relative">
         <div className="mx-auto max-w-3xl">
@@ -257,7 +257,7 @@ const provaSocial1 = [
 
 function ProvaSocial1() {
   return (
-    <section className="section-light py-24 md:py-28">
+    <section className="section-light py-12 md:py-28">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <Eyebrow>Histórias reais</Eyebrow>
@@ -370,7 +370,7 @@ const etapas = [
 
 function Metodo() {
   return (
-    <section id="metodo" className="section-light relative py-24 md:py-32">
+    <section id="metodo" className="section-light relative py-12 md:py-32">
       <Container>
         <div className="grid items-start gap-14 md:grid-cols-[0.9fr_1.1fr]">
           <div className="md:sticky md:top-24">
@@ -454,7 +454,7 @@ function ParaQuem() {
     "Quem acredita que o problema está só nos outros",
   ];
   return (
-    <section id="para-quem" className="section-light py-24 md:py-28">
+    <section id="para-quem" className="section-light py-12 md:py-28">
       <Container>
         <div className="grid gap-8 md:grid-cols-2">
           <div className="rounded-3xl bg-[var(--color-plum)]/8 p-8 md:p-10">
@@ -532,7 +532,7 @@ const entregaveis = [
 
 function Entregaveis() {
   return (
-    <section className="section-light py-24 md:py-28">
+    <section className="section-light py-12 md:py-28">
       <Container>
         <div className="grid items-end gap-10 md:grid-cols-[1fr_auto] md:gap-16">
           <div>
@@ -612,7 +612,7 @@ function Bonus() {
     },
   ];
   return (
-    <section className="section-light py-24 md:py-28">
+    <section className="section-light py-12 md:py-28">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <Eyebrow>Bônus exclusivos</Eyebrow>
@@ -699,7 +699,7 @@ const depoimentos = [
 
 function Depoimentos() {
   return (
-    <section id="depoimentos" className="section-light py-24 md:py-32">
+    <section id="depoimentos" className="section-light py-12 md:py-32">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <Eyebrow>Depoimentos</Eyebrow>
@@ -747,10 +747,10 @@ function Depoimentos() {
 
 function Autoridade() {
   return (
-    <section className="section-light py-24 md:py-32">
+    <section className="section-light py-12 md:py-32">
       <Container>
         <div className="grid items-center gap-12 md:grid-cols-[0.9fr_1.1fr]">
-          <div className="relative">
+          <div className="relative order-2 md:order-1">
             <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-[var(--color-plum)]/10 blur-2xl" />
             <div className="overflow-hidden rounded-[1.5rem] shadow-float">
               <img src={creatorImg} alt="Licia Santos" className="h-[560px] w-full object-cover" />
@@ -763,7 +763,7 @@ function Autoridade() {
             </div>
           </div>
 
-          <div>
+          <div className="order-1 md:order-2">
             <Eyebrow>Sobre a criadora</Eyebrow>
             <h2 className="display mt-5 text-[32px] md:text-[44px]">
               Quem criou este método{" "}
@@ -830,7 +830,7 @@ const stack = [
 
 function Oferta() {
   return (
-    <section id="oferta" className="section-dark relative overflow-hidden py-24 md:py-32">
+    <section id="oferta" className="section-dark relative overflow-hidden py-12 md:py-32">
       <div className="absolute inset-0 grain opacity-30" />
       <Container className="relative">
         <div className="mx-auto max-w-2xl text-center">
@@ -899,7 +899,7 @@ function Oferta() {
 
 function Garantia() {
   return (
-    <section className="section-light py-24 md:py-28">
+    <section className="section-light py-12 md:py-28">
       <Container>
         <div className="grid items-center gap-10 rounded-3xl bg-[var(--color-surface)] p-8 md:grid-cols-[auto_1fr] md:gap-14 md:p-14">
           <div className="mx-auto">
@@ -980,7 +980,7 @@ function FAQItem({ q, a, open, onClick }: { q: string; a: string; open: boolean;
 function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
   return (
-    <section id="faq" className="section-light py-24 md:py-32">
+    <section id="faq" className="section-light py-12 md:py-32">
       <Container>
         <div className="grid gap-12 md:grid-cols-[0.7fr_1.3fr]">
           <div>
@@ -1009,9 +1009,7 @@ function FAQ() {
 
 function CTAFinal() {
   return (
-    <section className="section-dark relative overflow-hidden py-28 md:py-36">
-      <img src={doorwayImg} alt="" className="absolute inset-0 h-full w-full object-cover opacity-25" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-background)] via-[var(--color-background)]/85 to-[var(--color-background)]/60" />
+    <section className="relative overflow-hidden py-14 md:py-36 bg-[#2d0f28]">
       <Container className="relative">
         <div className="mx-auto max-w-3xl text-center">
           <Eyebrow>Sua próxima decisão</Eyebrow>
