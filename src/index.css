@@ -6,7 +6,7 @@
   :root {
     --color-plum: #4a1942;
     --color-gold: #c9a227;
-    --color-foreground: #1a1a1a;
+    --color-foreground: #2d0f28;
     --color-primary-foreground: #ffffff;
     --color-ink-soft: #5a5a5a;
     --color-muted-foreground: #8a8a8a;
@@ -42,8 +42,8 @@
   }
 
   .section-dark {
-    background: #1a1a1a;
-    color: #ffffff;
+    background: #2d0f28;
+    color: #fff8f5;
     --color-muted-foreground: #a0a0a0;
   }
 

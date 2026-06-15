@@ -90,7 +90,7 @@ function Nav() {
     <header className="relative z-30 section-light">
       <Container className="flex items-center justify-between py-6">
         <a href="#top" className="flex items-center gap-2">
-          <img src={logoImg} alt="Decide Agora" className="h-32 w-auto object-contain" />
+          <img src={logoImg} alt="Decide Agora" className="h-28 w-auto object-contain" />
         </a>
         <nav className="hidden items-center gap-8 text-sm text-[var(--color-ink-soft)] md:flex">
           <a href="#metodo" className="hover:text-[var(--color-foreground)]">Método</a>
@@ -866,7 +866,7 @@ function Oferta() {
             </li>
           </ul>
 
-          <div className="border-t border-white/10 bg-[#3b1a35] p-8 text-center md:p-12">
+          <div className="border-t border-white/10 bg-[#3d1238] p-8 text-center md:p-12">
             <div className="text-[11px] uppercase tracking-[0.22em] text-[var(--color-gold)]">
               Preço hoje
             </div>
