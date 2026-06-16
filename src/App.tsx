@@ -139,7 +139,7 @@ function Hero() {
             </ul>
 
             <div className="mt-10 flex flex-wrap items-center gap-5">
-              <PrimaryCTA>Quero treinar meu cérebro para decidir</PrimaryCTA>
+              <PrimaryCTA href="#metodo">Quero treinar meu cérebro para decidir</PrimaryCTA>
               <div className="flex items-center gap-3 text-[13px] text-[var(--color-muted-foreground)]">
                 <ShieldCheck className="size-4" />
                 Garantia incondicional de 7 dias
