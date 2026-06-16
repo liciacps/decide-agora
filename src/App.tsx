@@ -159,18 +159,16 @@ function Hero() {
           </div>
         </div>
 
-        {/* video placeholder */}
-        <div className="mt-16 overflow-hidden rounded-2xl bg-[var(--color-plum)]/95 text-[var(--color-primary-foreground)] shadow-float">
+        {/* video */}
+        <div className="mt-16 overflow-hidden rounded-2xl shadow-float">
           <div className="relative aspect-video w-full">
-            <div className="absolute inset-0 grid place-items-center">
-              <div className="text-center">
-                <button className="grid size-16 place-items-center rounded-full bg-[var(--color-primary-foreground)]/10 backdrop-blur ring-1 ring-white/30 transition hover:scale-105">
-                  <div className="ml-1 size-0 border-y-8 border-l-[14px] border-y-transparent border-l-white" />
-                </button>
-                <p className="mt-4 text-sm uppercase tracking-[0.2em] opacity-80">Assista o vídeo</p>
-                <p className="font-display mt-1 text-2xl">Como funciona o Método Decide Agora</p>
-              </div>
-            </div>
+            <iframe
+              src="https://www.youtube.com/embed/JorseujVx_k"
+              title="Como funciona o Método Decide Agora"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="absolute inset-0 h-full w-full"
+            />
           </div>
         </div>
       </Container>
@@ -1055,14 +1053,14 @@ function CTAFinal() {
 function Footer() {
   return (
     <footer className="section-light hairline-t py-12">
-      <Container className="flex flex-col items-center justify-between gap-6 md:flex-row">
-        <img src={logoImg} alt="Decide Agora" className="h-12 w-auto" />
-        <p className="text-center text-xs text-[var(--color-muted-foreground)]">
+      <Container className="flex flex-col items-center gap-6 text-center">
+        <img src={logoImg} alt="Decide Agora" className="h-24 w-auto" />
+        <p className="text-xs text-[var(--color-muted-foreground)]">
           Ao continuar, você concorda com os{" "}
           <a href="https://docs.google.com/document/d/1eJUnG-jSLtyqxlTaHvjvdx4dlSsCMiJJ/edit?usp=sharing&ouid=102952477424481436790&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" className="underline hover:text-[var(--color-plum)]">
             termos de uso e política de privacidade
-          </a>.
-          <br />© {new Date().getFullYear()} Mulher que Decide. Todos os direitos reservados.
+          </a>.<br />
+          © {new Date().getFullYear()} Mulher que Decide. Todos os direitos reservados.
         </p>
       </Container>
     </footer>
