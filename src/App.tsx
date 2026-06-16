@@ -56,7 +56,7 @@ function Container({
 
 function PrimaryCTA({
   children,
-  href = "#oferta",
+  href = "https://pay.kiwify.com.br/t7S1be0",
   className = "",
 }: {
   children: React.ReactNode;
@@ -312,7 +312,7 @@ function CTAMid() {
           </p>
           <div className="relative mt-8 flex justify-center">
             <a
-              href="#oferta"
+              href="https://pay.kiwify.com.br/t7S1be0"
               className="group inline-flex items-center gap-3 rounded-full bg-[var(--color-primary-foreground)] px-7 py-4 text-[15px] font-medium text-[var(--color-plum)] transition hover:-translate-y-[1px]"
             >
               Quero começar meus 30 dias agora
@@ -883,7 +883,7 @@ function Oferta() {
             </div>
             <div className="mt-8 flex justify-center">
               <a
-                href="#"
+                href="https://pay.kiwify.com.br/t7S1be0"
                 className="group inline-flex items-center gap-3 rounded-full bg-[var(--color-gold)] px-8 py-4 text-[15px] font-medium text-[var(--color-plum)] transition hover:-translate-y-[1px]"
               >
                 Quero começar meus 30 dias agora
@@ -1032,7 +1032,7 @@ function CTAFinal() {
           </p>
           <div className="mt-10 flex flex-col items-center gap-5">
             <a
-              href="#oferta"
+              href="https://pay.kiwify.com.br/t7S1be0"
               className="group inline-flex items-center gap-3 rounded-full bg-[var(--color-gold)] px-9 py-5 text-[16px] font-medium text-[var(--color-plum)] transition hover:-translate-y-[1px]"
             >
               Quero começar meus 30 dias agora
