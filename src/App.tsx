@@ -170,18 +170,17 @@ function Hero() {
           </div>
         </div>
 
-        {/* Vídeo logo abaixo do topo */}
-        <div className="mt-20 overflow-hidden rounded-2xl bg-[var(--color-plum)]/95 text-[var(--color-primary-foreground)] shadow-float">
+        {/* Vídeo YouTube */}
+        <div className="mt-20 overflow-hidden rounded-2xl shadow-float">
           <div className="relative aspect-video w-full">
-            <div className="absolute inset-0 grid place-items-center">
-              <div className="text-center">
-                <button className="grid size-16 place-items-center rounded-full bg-[var(--color-primary-foreground)]/10 backdrop-blur ring-1 ring-white/30 transition hover:scale-105">
-                  <div className="ml-1 size-0 border-y-8 border-l-[14px] border-y-transparent border-l-white" />
-                </button>
-                <p className="mt-4 text-sm uppercase tracking-[0.2em] opacity-80">Assista o vídeo</p>
-                <p className="font-display mt-1 text-2xl">Como funciona o Método Decide Agora</p>
-              </div>
-            </div>
+            <iframe
+              className="absolute inset-0 h-full w-full"
+              src="https://www.youtube.com/embed/JorseujVx_k"
+              title="Como funciona o Método Decide Agora"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
         </div>
       </Container>
@@ -316,46 +315,23 @@ function Depoimentos() {
           </h2>
         </div>
 
-        {/* Aviso de depoimentos reais */}
-        <div className="mx-auto mt-10 max-w-2xl rounded-2xl border border-[var(--color-plum)]/20 bg-[var(--color-plum)]/5 p-6 text-center">
-          <p className="text-[14px] text-[var(--color-ink-soft)]">
-            ⚠️ <strong className="text-[var(--color-foreground)]">Substitua esta seção por depoimentos reais</strong> — com foto, print de conversa, vídeo ou @ do Instagram. Depoimentos autênticos convertem muito mais do que textos perfeitos.
-          </p>
-        </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
           {[
             {
-              iniciais: "JM",
-              nome: "Juliana M.",
-              perfil: "38 anos, psicóloga clínica",
-              antes: "Sabia de cor cada padrão que precisava mudar. Mesmo assim, quando chegava a hora de decidir algo importante, travava.",
-              resultado: "Tomou a decisão em 12 minutos, comunicou no mesmo dia. Foi a primeira vez que sentiu 'clareza sem ansiedade'.",
+              iniciais: "T.",
+              depoimento: "Eu simplesmente não conseguia pedir algo para comer. Sempre esperava alguém que estava comigo pedir antes para eu falar que queria igual. Hoje, por mais que escolha algo que não goste, ainda fico feliz por ter escolhido.",
             },
             {
-              iniciais: "FC",
-              nome: "Fernanda C.",
-              perfil: "31 anos, designer",
-              antes: "Vivia no ciclo de começar algo novo a cada 3 meses e abandonar antes de completar.",
-              resultado: "Completou os 30 dias pela primeira vez na vida e, no Dia 28, assinou contrato com um cliente que tinha medo de abordar.",
+              iniciais: "L.",
+              depoimento: "Passei anos em um relacionamento ruim porque não tinha coragem de decidir terminar. Hoje analiso as situações com a ferramenta 10/10/10 de forma muito mais confiante.",
             },
             {
-              iniciais: "TR",
-              nome: "Tatiane R.",
-              perfil: "44 anos, empreendedora",
-              antes: "Levava em média 3 semanas para decidir qualquer coisa que envolvesse dinheiro.",
-              resultado: "Encerrou duas parcerias que travavam o negócio e dobrou o faturamento mensal em 60 dias.",
-            },
-            {
-              iniciais: "RS",
-              nome: "Renata S.",
-              perfil: "29 anos, enfermeira",
-              antes: "Sempre se descrevia como 'indecisa por natureza'. Aceitava plantões que não queria.",
-              resultado: "Em 30 dias disse não para 11 situações. A culpa caiu de 9 para 3 em uma escala de 10.",
+              iniciais: "B.",
+              depoimento: "Pedia opinião para tudo — até se fazia ou não um curso. Não conseguia decidir coisas que só diziam respeito a mim. Hoje já tenho meus pensamentos alinhados, sem medo de errar.",
             },
           ].map((d) => (
             <motion.article
-              key={d.nome}
+              key={d.iniciais}
               initial={{ opacity: 0, y: 14 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
@@ -363,20 +339,12 @@ function Depoimentos() {
               className="rounded-2xl border border-[var(--color-hairline)] bg-[var(--color-surface-raised)] p-8"
             >
               <Quote className="size-6 text-[var(--color-plum)]/40" />
-              <div className="mt-5 space-y-3 text-[14px] leading-relaxed text-[var(--color-ink-soft)]">
-                <p><span className="font-medium text-[var(--color-foreground)]">Antes:</span> {d.antes}</p>
-                <p className="rounded-xl bg-[var(--color-plum)]/8 p-4 text-[var(--color-foreground)]">
-                  <span className="font-medium">Resultado:</span> {d.resultado}
-                </p>
-              </div>
+              <p className="mt-5 text-[15px] leading-relaxed text-[var(--color-ink-soft)]">{d.depoimento}</p>
               <div className="mt-6 flex items-center gap-3 border-t border-[var(--color-hairline)] pt-5">
                 <div className="size-12 rounded-full bg-[var(--color-plum)] flex items-center justify-center shrink-0">
                   <span className="text-white font-medium text-sm">{d.iniciais}</span>
                 </div>
-                <div>
-                  <div className="text-sm font-medium">{d.nome}</div>
-                  <div className="text-xs text-[var(--color-muted-foreground)]">{d.perfil}</div>
-                </div>
+                <div className="text-sm font-medium">{d.iniciais}</div>
               </div>
             </motion.article>
           ))}
