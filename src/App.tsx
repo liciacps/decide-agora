@@ -201,7 +201,7 @@ function Hero() {
 
 function Dor() {
   return (
-    <section className="section-dark relative overflow-hidden py-24 md:py-32">
+    <section className="section-dark relative overflow-hidden py-14 md:py-20">
       <div className="absolute inset-0 grain opacity-40" />
       <Container className="relative">
         <div className="mx-auto max-w-3xl">
@@ -261,7 +261,7 @@ function Dor() {
 
 function Autoridade() {
   return (
-    <section className="section-light py-24 md:py-32">
+    <section className="section-light py-14 md:py-20">
       <Container>
         <div className="grid items-center gap-12 md:grid-cols-[0.9fr_1.1fr]">
           <div className="relative">
@@ -320,7 +320,7 @@ function Autoridade() {
 
 function Depoimentos() {
   return (
-    <section id="depoimentos" className="section-light py-24 md:py-32">
+    <section id="depoimentos" className="section-light py-14 md:py-20">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <Eyebrow>Depoimentos</Eyebrow>
@@ -417,7 +417,7 @@ const etapas = [
 
 function Metodo() {
   return (
-    <section id="metodo" className="section-light relative py-24 md:py-32">
+    <section id="metodo" className="section-light relative py-14 md:py-20">
       <Container>
         <div className="grid items-start gap-14 md:grid-cols-[0.9fr_1.1fr]">
           <div className="md:sticky md:top-24">
@@ -487,7 +487,7 @@ function Metodo() {
 
 function ParaQuem() {
   const sim = [
-    "Mulheres entre 28 e 45 anos que sentem que \"funcionam\" externamente mas estão travadas por dentro",
+    "Mulheres que vivem pensando demais antes de agir",
     "Quem já fez terapia, leu sobre autoconhecimento e ainda assim sente que algo não avança",
     "Quem demora para decidir, pede opinião de todo mundo e depois se arrepende",
     "Quem está passando por uma transição e precisa de clareza",
@@ -500,7 +500,7 @@ function ParaQuem() {
     "Quem acredita que o problema está só nos outros",
   ];
   return (
-    <section id="para-quem" className="section-light py-24 md:py-28">
+    <section id="para-quem" className="section-light py-14 md:py-18">
       <Container>
         <div className="grid gap-8 md:grid-cols-2">
           <div className="rounded-3xl bg-[var(--color-plum)]/8 p-8 md:p-10">
@@ -554,7 +554,7 @@ const entregaveis = [
 
 function Entregaveis() {
   return (
-    <section className="section-light py-24 md:py-28">
+    <section className="section-light py-14 md:py-18">
       <Container>
         <div className="grid items-end gap-10 md:grid-cols-[1fr_auto] md:gap-16">
           <div>
@@ -610,7 +610,7 @@ function Bonus() {
     { img: bonusImgs[2], tag: "Bônus 03", title: "Mapa dos Valores", desc: "Exercício guiado em 5 etapas para identificar seus valores centrais." },
   ];
   return (
-    <section className="section-light py-24 md:py-28">
+    <section className="section-light py-14 md:py-18">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <Eyebrow>Bônus exclusivos</Eyebrow>
@@ -683,7 +683,7 @@ const stack = [
 
 function Oferta() {
   return (
-    <section id="oferta" className="section-dark relative overflow-hidden py-24 md:py-32">
+    <section id="oferta" className="section-dark relative overflow-hidden py-14 md:py-20">
       <div className="absolute inset-0 grain opacity-30" />
       <Container className="relative">
         <div className="mx-auto max-w-2xl text-center">
@@ -745,7 +745,7 @@ function Oferta() {
 
 function Garantia() {
   return (
-    <section className="section-light py-24 md:py-28">
+    <section className="section-light py-14 md:py-18">
       <Container>
         <div className="grid items-center gap-10 rounded-3xl bg-[var(--color-surface)] p-8 md:grid-cols-[auto_1fr] md:gap-14 md:p-14">
           <div className="mx-auto">
@@ -799,7 +799,7 @@ function FAQItem({ q, a, open, onClick }: { q: string; a: string; open: boolean;
 function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
   return (
-    <section id="faq" className="section-light py-24 md:py-32">
+    <section id="faq" className="section-light py-14 md:py-20">
       <Container>
         <div className="grid gap-12 md:grid-cols-[0.7fr_1.3fr]">
           <div>
@@ -828,7 +828,7 @@ function FAQ() {
 
 function CTAFinal() {
   return (
-    <section className="section-dark relative overflow-hidden py-28 md:py-36">
+    <section className="section-dark relative overflow-hidden py-16 md:py-24">
       <img src={doorwayImg} alt="" className="absolute inset-0 h-full w-full object-cover opacity-25" />
       <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-background)] via-[var(--color-background)]/85 to-[var(--color-background)]/60" />
       <Container className="relative">
