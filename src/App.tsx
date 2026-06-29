@@ -111,7 +111,8 @@ function Hero() {
               e não conseguir tomar decisões?
             </h1>
             <p className="mt-6 max-w-[560px] text-[17px] leading-relaxed text-[var(--color-ink-soft)]">
-              Método prático para mulheres que pensam demais, precisam de aprovação para agir e vivem adiando o que mais importa. Em 30 dias, você aprende a decidir com confiança — sem medo de errar e sem depender da opinião de ninguém.
+              Pare de esperar sentir certeza para agir.<br /><br />
+              Em apenas 30 dias você aprende a decidir com confiança — sem medo de errar e sem precisar da aprovação de ninguém.
             </p>
 
             <ul className="mt-8 space-y-3 text-[15px] leading-relaxed text-[var(--color-ink-soft)]">
@@ -132,11 +133,19 @@ function Hero() {
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-5">
-              <PrimaryCTA href="#metodo">Quero parar de ficar travada — R$97</PrimaryCTA>
+              <PrimaryCTA href="#metodo">Quero decidir com confiança</PrimaryCTA>
             </div>
-            <div className="mt-3 flex items-center gap-3 text-[13px] text-[var(--color-muted-foreground)]">
-              <ShieldCheck className="size-4" />
-              Garantia incondicional de 7 dias · Acesso imediato
+            <div className="mt-4 space-y-2">
+              {[
+                "Mais de 30 tarefas práticas — uma por dia",
+                "Acesso imediato após a compra",
+                "Garantia incondicional de 7 dias",
+              ].map((item) => (
+                <div key={item} className="flex items-center gap-2 text-[13px] text-[var(--color-ink-soft)]">
+                  <Check className="size-3.5 shrink-0 text-[var(--color-plum)]" />
+                  {item}
+                </div>
+              ))}
             </div>
 
             {/* Mini bio */}
@@ -205,25 +214,32 @@ function Dor() {
 
           <div className="mt-10 space-y-7 text-[17px] leading-[1.75] text-[var(--color-muted-foreground)]">
             <p>
-              Não é preguiça. Não é falta de informação. Você já leu os livros, já fez terapia,
-              já ouviu os podcasts. Sabe o que precisa fazer. E mesmo assim, na hora de decidir,
-              algo trava.
+              Não é preguiça.<br />
+              Você já tentou de tudo.
+            </p>
+            <ul className="space-y-1 pl-4 text-[16px]">
+              {["livros", "podcasts", "terapia", "cursos"].map(i => (
+                <li key={i} className="flex items-center gap-2">
+                  <span className="size-1.5 rounded-full bg-[var(--color-gold)] shrink-0 inline-block" />
+                  {i}
+                </li>
+              ))}
+            </ul>
+            <p>
+              E mesmo assim...<br />
+              na hora de decidir...<br />
+              <span className="text-[var(--color-gold)] font-medium">você trava.</span>
             </p>
             <p>
-              Você adia a conversa importante por mais uma semana. Aceita o projeto abaixo do que
-              vale porque "essa não é a hora certa". Muda o plano três vezes antes de começar.
-              Pergunta pra mais uma pessoa o que ela acha, mesmo já sabendo o que quer.
+              Você adia a conversa importante por mais uma semana.<br />
+              Aceita o projeto abaixo do que vale porque "essa não é a hora certa".<br />
+              Muda o plano três vezes antes de começar.<br />
+              Pergunta pra mais uma pessoa o que ela acha — mesmo já sabendo o que quer.
             </p>
             <p>
-              Isso tem uma causa específica. O cérebro humano não foi treinado para tomar
-              decisões sob pressão emocional. Quando medo, dúvida e necessidade de aprovação
-              entram juntos no circuito, o sistema nervoso escolhe a opção mais segura: não
-              decidir.
-            </p>
-            <p>
-              O inimigo aqui não é você. É o jeito que você aprendeu a lidar com escolhas.
-              Provavelmente desde cedo você foi ensinada a considerar o outro antes de si mesma.
-              A esperar validação antes de agir.
+              O inimigo aqui não é você.<br />
+              É o jeito que você aprendeu a lidar com escolhas.<br />
+              Desde cedo você foi ensinada a esperar validação antes de agir.
             </p>
           </div>
 
