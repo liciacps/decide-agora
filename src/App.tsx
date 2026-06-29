@@ -334,18 +334,18 @@ function Depoimentos() {
           {[
             {
               iniciais: "T.G.",
-              nome: "Tania G.",
+              nome: "Cliente do Método T.G.",
               depoimento: "Eu simplesmente não conseguia pedir algo para comer. Sempre esperava alguém que estava comigo pedir antes para eu falar que queria igual. Hoje, por mais que escolha algo que não goste, ainda fico feliz por ter escolhido.",
             },
             {
               iniciais: "S.C.",
-              nome: "Sueli C.",
-              depoimento: "Passei anos em um relacionamento ruim porque não tinha coragem de decidir terminar. Hoje analiso as situações com a ferramenta 10/10/10 de forma muito mais confiante.",
+              nome: "Cliente do Método S.C.",
+              depoimento: "Passei anos em um relacionamento ruim porque não tinha coragem de decidir terminar. Hoje consigo tomar decisões muito mais rápido usando a ferramenta 10/10/10.",
             },
             {
               iniciais: "B.O.",
-              nome: "Beatriz O.",
-              depoimento: "Pedia opinião para tudo — até se fazia ou não um curso. Não conseguia decidir coisas que só diziam respeito a mim. Hoje já tenho meus pensamentos alinhados, sem medo de errar.",
+              nome: "Cliente do Método B.O.",
+              depoimento: "Pedia opinião para tudo — até se fazia ou não um curso. Não conseguia decidir coisas que só diziam respeito a mim. Hoje consigo decidir sem precisar pedir opinião para todo mundo.",
             },
           ].map((d) => (
             <motion.article
