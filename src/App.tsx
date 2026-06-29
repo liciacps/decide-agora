@@ -318,15 +318,15 @@ function Depoimentos() {
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {[
             {
-              iniciais: "T.",
+              iniciais: "T.G.",
               depoimento: "Eu simplesmente não conseguia pedir algo para comer. Sempre esperava alguém que estava comigo pedir antes para eu falar que queria igual. Hoje, por mais que escolha algo que não goste, ainda fico feliz por ter escolhido.",
             },
             {
-              iniciais: "L.",
+              iniciais: "L.D.",
               depoimento: "Passei anos em um relacionamento ruim porque não tinha coragem de decidir terminar. Hoje analiso as situações com a ferramenta 10/10/10 de forma muito mais confiante.",
             },
             {
-              iniciais: "B.",
+              iniciais: "B.O.",
               depoimento: "Pedia opinião para tudo — até se fazia ou não um curso. Não conseguia decidir coisas que só diziam respeito a mim. Hoje já tenho meus pensamentos alinhados, sem medo de errar.",
             },
           ].map((d) => (
