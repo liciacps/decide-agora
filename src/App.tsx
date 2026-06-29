@@ -15,19 +15,11 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 
-const heroImg = "/mqd-hero-DW0UWT_S.jpg";
-const creatorImg = "/Captura_de_tela_2026-06-11_161258.png";
+const creatorImg = "/licia-foto.png";
 const journalImg = "/mqd-journal-B_3cC0rt.jpg";
 const writingImg = "/mqd-writing-CmqmvkGe.jpg";
 const logoImg = "/logo-nova.png";
 const doorwayImg = "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1200";
-
-const avatarImgs = [
-  "https://images.pexels.com/photos/3764119/pexels-photo-3764119.jpeg?auto=compress&cs=tinysrgb&w=100",
-  "https://images.pexels.com/photos/3758977/pexels-photo-3758977.jpeg?auto=compress&cs=tinysrgb&w=100",
-  "https://images.pexels.com/photos/3777525/pexels-photo-3777525.jpeg?auto=compress&cs=tinysrgb&w=100",
-  "https://images.pexels.com/photos/3760215/pexels-photo-3760215.jpeg?auto=compress&cs=tinysrgb&w=100",
-];
 
 const bonusImgs = [
   "/bonus1-frases.png",
@@ -56,7 +48,7 @@ function Container({
 
 function PrimaryCTA({
   children,
-  href = "https://pay.kiwify.com.br/t7S1be0",
+  href = "#oferta",
   className = "",
 }: {
   children: React.ReactNode;
@@ -90,7 +82,7 @@ function Nav() {
     <header className="relative z-30 section-light">
       <Container className="flex items-center justify-between py-6">
         <a href="#top" className="flex items-center gap-2">
-          <img src={logoImg} alt="Decide Agora" className="h-64 w-auto object-contain" />
+          <img src={logoImg} alt="Decide Agora" className="h-32 w-auto object-contain" />
         </a>
         <nav className="hidden items-center gap-8 text-sm text-[var(--color-ink-soft)] md:flex">
           <a href="#metodo" className="hover:text-[var(--color-foreground)]">Método</a>
@@ -111,25 +103,22 @@ function Hero() {
     <section id="top" className="section-light relative overflow-hidden pt-6 pb-20 md:pt-8 md:pb-28">
       <Container>
         <div className="grid items-center gap-12 md:grid-cols-[1.05fr_0.95fr]">
-          <div className="fade-up order-2 md:order-1">
-            <Eyebrow>Desafio 30 Dias</Eyebrow>
-            <h1 className="display display-tight mt-5 text-[44px] sm:text-[56px] md:text-[68px]">
-              Existe uma mulher inteira
-              <br />
-              <span className="font-italic-serif text-[var(--color-plum)]">dentro de você</span>{" "}
-              esperando uma decisão.
+          <div className="fade-up">
+            <Eyebrow>E-book · Método Decide Agora</Eyebrow>
+            <h1 className="display display-tight mt-5 text-[40px] sm:text-[52px] md:text-[62px]">
+              Cansada de ficar{" "}
+              <span className="font-italic-serif text-[var(--color-plum)]">travada</span>{" "}
+              e não conseguir tomar decisões?
             </h1>
             <p className="mt-6 max-w-[560px] text-[17px] leading-relaxed text-[var(--color-ink-soft)]">
-              Você sabe que ela está lá. Inteligente, criativa, capaz. O que falta não é mais
-              autoconhecimento. É aprender a decidir, sustentar e avançar sem precisar da
-              aprovação de ninguém.
+              Método prático para mulheres que pensam demais, precisam de aprovação para agir e vivem adiando o que mais importa. Em 30 dias, você aprende a decidir com confiança — sem medo de errar e sem depender da opinião de ninguém.
             </p>
 
             <ul className="mt-8 space-y-3 text-[15px] leading-relaxed text-[var(--color-ink-soft)]">
               {[
-                "Você pensa por horas, decide em 5 minutos e se arrepende em 10. Em 30 dias, esse ciclo para.",
-                "Mulheres que dependem de aprovação externa levam em média 3 vezes mais tempo para agir.",
-                "A distância entre quem você é e quem você sente que poderia ser tem nome e tem solução.",
+                "Você demora dias para responder uma mensagem simples — com medo de errar.",
+                "Pesquisa tudo, pede opinião de todo mundo e mesmo assim não age.",
+                "Sabe o que quer, mas fica esperando o momento certo que nunca chega.",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3">
                   <span className="mt-2 size-1.5 shrink-0 rounded-full bg-[var(--color-plum)]" />
@@ -138,37 +127,61 @@ function Hero() {
               ))}
             </ul>
 
-            <div className="mt-10 flex flex-wrap items-center gap-5">
-              <PrimaryCTA href="#metodo">Quero treinar meu cérebro para decidir</PrimaryCTA>
-              <div className="flex items-center gap-3 text-[13px] text-[var(--color-muted-foreground)]">
-                <ShieldCheck className="size-4" />
-                Garantia incondicional de 7 dias
+            <p className="mt-6 text-[15px] font-medium text-[var(--color-plum)]">
+              Se você se identificou, este e-book foi feito para você.
+            </p>
+
+            <div className="mt-8 flex flex-wrap items-center gap-5">
+              <PrimaryCTA>Quero parar de ficar travada — R$97</PrimaryCTA>
+            </div>
+            <div className="mt-3 flex items-center gap-3 text-[13px] text-[var(--color-muted-foreground)]">
+              <ShieldCheck className="size-4" />
+              Garantia incondicional de 7 dias · Acesso imediato
+            </div>
+
+            {/* Mini bio */}
+            <div className="mt-10 flex items-center gap-4 border-t border-[var(--color-plum)]/10 pt-8">
+              <img
+                src="/licia-foto.png"
+                alt="Licia Santos"
+                className="size-14 shrink-0 rounded-full object-cover shadow-md ring-2 ring-[var(--color-plum)]/20"
+              />
+              <div>
+                <p className="text-[14px] font-medium text-[var(--color-foreground)]">Licia Santos</p>
+                <p className="text-[13px] text-[var(--color-ink-soft)]">Engenheira, mestre em tomada de decisão e especialista em neurogestão</p>
               </div>
             </div>
           </div>
 
-          <div className="relative order-1 md:order-2">
+          <div className="relative">
             <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-[var(--color-plum)]/8 blur-2xl" />
             <div className="overflow-hidden rounded-[1.5rem] shadow-float">
               <img
-                src={heroImg}
-                alt="Mulher pensativa"
-                className="h-[520px] w-full object-cover md:h-[640px]"
+                src="/licia-foto.png"
+                alt="Licia Santos"
+                className="h-[520px] w-full object-cover object-top md:h-[640px]"
               />
+            </div>
+            <div className="absolute -bottom-5 -left-5 rounded-2xl bg-white px-5 py-4 shadow-xl">
+              <p className="text-[11px] uppercase tracking-widest text-[var(--color-muted-foreground)]">E-book</p>
+              <p className="mt-0.5 text-[15px] font-semibold text-[var(--color-foreground)]">Decide Agora</p>
+              <p className="text-[13px] text-[var(--color-plum)] font-medium">30 dias de método prático</p>
             </div>
           </div>
         </div>
 
-        {/* video */}
-        <div className="mt-16 overflow-hidden rounded-2xl shadow-float">
+        {/* Vídeo logo abaixo do topo */}
+        <div className="mt-20 overflow-hidden rounded-2xl bg-[var(--color-plum)]/95 text-[var(--color-primary-foreground)] shadow-float">
           <div className="relative aspect-video w-full">
-            <iframe
-              src="https://www.youtube.com/embed/JorseujVx_k"
-              title="Como funciona o Método Decide Agora"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="absolute inset-0 h-full w-full"
-            />
+            <div className="absolute inset-0 grid place-items-center">
+              <div className="text-center">
+                <button className="grid size-16 place-items-center rounded-full bg-[var(--color-primary-foreground)]/10 backdrop-blur ring-1 ring-white/30 transition hover:scale-105">
+                  <div className="ml-1 size-0 border-y-8 border-l-[14px] border-y-transparent border-l-white" />
+                </button>
+                <p className="mt-4 text-sm uppercase tracking-[0.2em] opacity-80">Assista o vídeo</p>
+                <p className="font-display mt-1 text-2xl">Como funciona o Método Decide Agora</p>
+              </div>
+            </div>
           </div>
         </div>
       </Container>
@@ -180,7 +193,7 @@ function Hero() {
 
 function Dor() {
   return (
-    <section className="section-dark relative overflow-hidden py-12 md:py-32">
+    <section className="section-dark relative overflow-hidden py-24 md:py-32">
       <div className="absolute inset-0 grain opacity-40" />
       <Container className="relative">
         <div className="mx-auto max-w-3xl">
@@ -230,62 +243,142 @@ function Dor() {
   );
 }
 
-/* ---------- PROVA SOCIAL 1 ---------- */
+/* ---------- AUTORIDADE (movida para antes dos depoimentos) ---------- */
 
-const provaSocial1 = [
-  {
-    name: "Camila R.",
-    age: "34 anos, terapeuta",
-    avatar: avatarImgs[0],
-    before:
-      "Ficava semanas adiando uma conversa de reajuste com cliente. Aceitava o preço antigo por medo de perder o vínculo.",
-    result:
-      "Aplicou o Protocolo Anti-Travamento em uma decisão real e respondeu no mesmo dia. Em 30 dias, reajustou 4 clientes sem perder nenhum.",
-  },
-  {
-    name: "Marina T.",
-    age: "41 anos, empreendedora",
-    avatar: avatarImgs[1],
-    before:
-      "Levava em média 3 semanas para decidir qualquer mudança no negócio. Sentia que precisava de aprovação do marido, da sócia e da mãe antes de agir.",
-    result:
-      "Nos últimos 30 dias tomou 12 decisões sozinha, incluindo encerrar uma parceria que travava o negócio há 8 meses.",
-  },
-];
-
-function ProvaSocial1() {
+function Autoridade() {
   return (
-    <section className="section-light py-12 md:py-28">
+    <section className="section-light py-24 md:py-32">
+      <Container>
+        <div className="grid items-center gap-12 md:grid-cols-[0.9fr_1.1fr]">
+          <div className="relative">
+            <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-[var(--color-plum)]/10 blur-2xl" />
+            <div className="overflow-hidden rounded-[1.5rem] shadow-float">
+              <img src={creatorImg} alt="Licia Santos" className="h-[560px] w-full object-cover object-top" />
+            </div>
+            <div className="absolute -bottom-5 left-6 rounded-2xl bg-[var(--color-surface-raised)] px-5 py-4 shadow-float">
+              <div className="text-[11px] uppercase tracking-[0.2em] text-[var(--color-muted-foreground)]">
+                Quem criou o método
+              </div>
+              <div className="font-display mt-1 text-xl">Licia Santos</div>
+            </div>
+          </div>
+
+          <div>
+            <Eyebrow>Sobre a criadora</Eyebrow>
+            <h2 className="display mt-5 text-[32px] md:text-[44px]">
+              Quem criou este método{" "}
+              <span className="font-italic-serif text-[var(--color-plum)]">e por quê.</span>
+            </h2>
+            <p className="mt-6 text-[15px] leading-relaxed text-[var(--color-ink-soft)]">
+              <strong className="text-[var(--color-foreground)]">Licia Santos.</strong> Engenheira de produção com 8 anos em uma multinacional automotiva, Mestre em Engenharia com foco em tomada de decisão e pós-graduada em Neurogestão.
+            </p>
+            <div className="mt-5 space-y-4 text-[15px] leading-relaxed text-[var(--color-ink-soft)]">
+              <p>
+                Durante anos, Licia foi responsável por decisões técnicas de alto impacto — projetos, pessoas, prazos e recursos. Do lado de fora, tudo funcionava. Por dentro, ela também travava nas próprias escolhas pessoais.
+              </p>
+              <p>
+                Foi estudando neurogestão que ela entendeu o que acontecia: não era fraqueza. Era um circuito que nunca tinha sido treinado para decidir sob pressão emocional.
+              </p>
+              <p>
+                O Método Decide Agora nasceu disso: da combinação entre rigor técnico de uma engenheira e a aplicação prática da neurociência aplicada à decisão.
+              </p>
+            </div>
+            <div className="mt-8 grid grid-cols-3 gap-4">
+              {[
+                { n: "8 anos", label: "em gestão corporativa" },
+                { n: "Mestrado", label: "em tomada de decisão" },
+                { n: "Pós", label: "em neurogestão" },
+              ].map((item) => (
+                <div key={item.label} className="rounded-2xl bg-[var(--color-plum)]/8 p-4 text-center">
+                  <div className="font-display text-xl text-[var(--color-plum)]">{item.n}</div>
+                  <div className="mt-1 text-[12px] text-[var(--color-ink-soft)]">{item.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+/* ---------- DEPOIMENTOS ---------- */
+
+function Depoimentos() {
+  return (
+    <section id="depoimentos" className="section-light py-24 md:py-32">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
-          <Eyebrow>Histórias reais</Eyebrow>
-          <h2 className="display mt-5 text-[32px] md:text-[42px]">
-            Mulheres que pararam de esperar{" "}
-            <span className="font-italic-serif text-[var(--color-plum)]">permissão</span> para agir.
+          <Eyebrow>Depoimentos</Eyebrow>
+          <h2 className="display mt-5 text-[34px] md:text-[46px]">
+            O que muda quando uma mulher para de pedir{" "}
+            <span className="font-italic-serif text-[var(--color-plum)]">permissão para si mesma.</span>
           </h2>
         </div>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2">
-          {provaSocial1.map((p) => (
-            <article
-              key={p.name}
-              className="rounded-2xl bg-[var(--color-surface-raised)] p-8 shadow-float"
+        {/* Aviso de depoimentos reais */}
+        <div className="mx-auto mt-10 max-w-2xl rounded-2xl border border-[var(--color-plum)]/20 bg-[var(--color-plum)]/5 p-6 text-center">
+          <p className="text-[14px] text-[var(--color-ink-soft)]">
+            ⚠️ <strong className="text-[var(--color-foreground)]">Substitua esta seção por depoimentos reais</strong> — com foto, print de conversa, vídeo ou @ do Instagram. Depoimentos autênticos convertem muito mais do que textos perfeitos.
+          </p>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          {[
+            {
+              iniciais: "JM",
+              nome: "Juliana M.",
+              perfil: "38 anos, psicóloga clínica",
+              antes: "Sabia de cor cada padrão que precisava mudar. Mesmo assim, quando chegava a hora de decidir algo importante, travava.",
+              resultado: "Tomou a decisão em 12 minutos, comunicou no mesmo dia. Foi a primeira vez que sentiu 'clareza sem ansiedade'.",
+            },
+            {
+              iniciais: "FC",
+              nome: "Fernanda C.",
+              perfil: "31 anos, designer",
+              antes: "Vivia no ciclo de começar algo novo a cada 3 meses e abandonar antes de completar.",
+              resultado: "Completou os 30 dias pela primeira vez na vida e, no Dia 28, assinou contrato com um cliente que tinha medo de abordar.",
+            },
+            {
+              iniciais: "TR",
+              nome: "Tatiane R.",
+              perfil: "44 anos, empreendedora",
+              antes: "Levava em média 3 semanas para decidir qualquer coisa que envolvesse dinheiro.",
+              resultado: "Encerrou duas parcerias que travavam o negócio e dobrou o faturamento mensal em 60 dias.",
+            },
+            {
+              iniciais: "RS",
+              nome: "Renata S.",
+              perfil: "29 anos, enfermeira",
+              antes: "Sempre se descrevia como 'indecisa por natureza'. Aceitava plantões que não queria.",
+              resultado: "Em 30 dias disse não para 11 situações. A culpa caiu de 9 para 3 em uma escala de 10.",
+            },
+          ].map((d) => (
+            <motion.article
+              key={d.nome}
+              initial={{ opacity: 0, y: 14 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.5 }}
+              className="rounded-2xl border border-[var(--color-hairline)] bg-[var(--color-surface-raised)] p-8"
             >
               <Quote className="size-6 text-[var(--color-plum)]/40" />
-              <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-[var(--color-ink-soft)]">
-                <p><span className="font-medium text-[var(--color-foreground)]">Antes:</span> {p.before}</p>
-                <p><span className="font-medium text-[var(--color-foreground)]">Resultado:</span> {p.result}</p>
+              <div className="mt-5 space-y-3 text-[14px] leading-relaxed text-[var(--color-ink-soft)]">
+                <p><span className="font-medium text-[var(--color-foreground)]">Antes:</span> {d.antes}</p>
+                <p className="rounded-xl bg-[var(--color-plum)]/8 p-4 text-[var(--color-foreground)]">
+                  <span className="font-medium">Resultado:</span> {d.resultado}
+                </p>
               </div>
               <div className="mt-6 flex items-center gap-3 border-t border-[var(--color-hairline)] pt-5">
                 <div className="size-12 rounded-full bg-[var(--color-plum)] flex items-center justify-center shrink-0">
-                    <span className="text-white font-medium text-sm">{p.name.split(' ').map((n: string) => n[0]).slice(0,2).join('')}</span>
-                  </div>
+                  <span className="text-white font-medium text-sm">{d.iniciais}</span>
+                </div>
                 <div>
-                  <div className="text-sm font-medium">{p.name}</div>
-                  <div className="text-xs text-[var(--color-muted-foreground)]">{p.age}</div>
+                  <div className="text-sm font-medium">{d.nome}</div>
+                  <div className="text-xs text-[var(--color-muted-foreground)]">{d.perfil}</div>
                 </div>
               </div>
-            </article>
+            </motion.article>
           ))}
         </div>
       </Container>
@@ -312,7 +405,7 @@ function CTAMid() {
           </p>
           <div className="relative mt-8 flex justify-center">
             <a
-              href="https://pay.kiwify.com.br/t7S1be0"
+              href="#oferta"
               className="group inline-flex items-center gap-3 rounded-full bg-[var(--color-primary-foreground)] px-7 py-4 text-[15px] font-medium text-[var(--color-plum)] transition hover:-translate-y-[1px]"
             >
               Quero começar meus 30 dias agora
@@ -328,47 +421,17 @@ function CTAMid() {
 /* ---------- MÉTODO ---------- */
 
 const etapas = [
-  {
-    n: "01",
-    title: "Diagnóstico de Bloqueio",
-    desc: "Identifica em qual dos 4 padrões de travamento você se encaixa.",
-    icon: Compass,
-  },
-  {
-    n: "02",
-    title: "Calibração de Valores",
-    desc: "Mapeia os 5 valores centrais que vão funcionar como bússola.",
-    icon: Star,
-  },
-  {
-    n: "03",
-    title: "Decisões Treinadas",
-    desc: "Tarefas diárias progressivas de baixo risco para instalar o hábito.",
-    icon: Sparkles,
-  },
-  {
-    n: "04",
-    title: "Registro e Evidência",
-    desc: "Diário de Decisões para documentar o que sentiu e o que aconteceu.",
-    icon: BookOpen,
-  },
-  {
-    n: "05",
-    title: "Protocolo de Emergência",
-    desc: "4 perguntas para usar em tempo real quando uma decisão parecer impossível.",
-    icon: MessageCircle,
-  },
-  {
-    n: "06",
-    title: "Avaliação de Encerramento",
-    desc: "Comparação entre o Dia 1 e o Dia 30.",
-    icon: Check,
-  },
+  { n: "01", title: "Diagnóstico de Bloqueio", desc: "Identifica em qual dos 4 padrões de travamento você se encaixa.", icon: Compass },
+  { n: "02", title: "Calibração de Valores", desc: "Mapeia os 5 valores centrais que vão funcionar como bússola.", icon: Star },
+  { n: "03", title: "Decisões Treinadas", desc: "Tarefas diárias progressivas de baixo risco para instalar o hábito.", icon: Sparkles },
+  { n: "04", title: "Registro e Evidência", desc: "Diário de Decisões para documentar o que sentiu e o que aconteceu.", icon: BookOpen },
+  { n: "05", title: "Protocolo de Emergência", desc: "4 perguntas para usar em tempo real quando uma decisão parecer impossível.", icon: MessageCircle },
+  { n: "06", title: "Avaliação de Encerramento", desc: "Comparação entre o Dia 1 e o Dia 30.", icon: Check },
 ];
 
 function Metodo() {
   return (
-    <section id="metodo" className="section-light relative py-12 md:py-32">
+    <section id="metodo" className="section-light relative py-24 md:py-32">
       <Container>
         <div className="grid items-start gap-14 md:grid-cols-[0.9fr_1.1fr]">
           <div className="md:sticky md:top-24">
@@ -382,7 +445,6 @@ function Metodo() {
               Baseado em <span className="font-italic-serif text-[var(--color-plum)] text-lg">neurogestão</span>, área que estuda como o cérebro
               regula emoções, toma decisões e forma hábitos sob pressão.
             </p>
-
             <div className="mt-8 overflow-hidden rounded-2xl">
               <img src={writingImg} alt="Escrevendo no diário" className="h-72 w-full object-cover" />
             </div>
@@ -452,7 +514,7 @@ function ParaQuem() {
     "Quem acredita que o problema está só nos outros",
   ];
   return (
-    <section id="para-quem" className="section-light py-12 md:py-28">
+    <section id="para-quem" className="section-light py-24 md:py-28">
       <Container>
         <div className="grid gap-8 md:grid-cols-2">
           <div className="rounded-3xl bg-[var(--color-plum)]/8 p-8 md:p-10">
@@ -493,44 +555,20 @@ function ParaQuem() {
   );
 }
 
-/* ---------- ENTREGÁVEIS ---------- */
+/* ---------- ENTREGÁVEIS (sem valores individuais) ---------- */
 
 const entregaveis = [
-  {
-    title: "PDF Principal, 30 Dias de Decisão",
-    desc: "Guia completo com uma tarefa diária para cada um dos 30 dias.",
-    value: "R$ 197",
-  },
-  {
-    title: "Diagnóstico de Bloqueio Inicial",
-    desc: "Questionário de 10 perguntas que identifica seu padrão de travamento.",
-    value: "R$ 97",
-  },
-  {
-    title: "Diário de Decisões",
-    desc: "Páginas de registro diário para documentar cada decisão.",
-    value: "R$ 67",
-  },
-  {
-    title: "Mapa de Valores Pessoais",
-    desc: "Exercício estruturado para identificar os 5 valores centrais.",
-    value: "R$ 87",
-  },
-  {
-    title: "Protocolo Anti-Travamento",
-    desc: "Roteiro de 4 perguntas para usar em tempo real.",
-    value: "R$ 47",
-  },
-  {
-    title: "Checklist de Encerramento, Dia 30",
-    desc: "Avaliação final para medir o quanto mudou.",
-    value: "R$ 37",
-  },
+  { title: "E-book Principal — 30 Dias de Decisão", desc: "Guia completo com uma tarefa diária para cada um dos 30 dias." },
+  { title: "Diagnóstico de Bloqueio Inicial", desc: "Questionário de 10 perguntas que identifica seu padrão de travamento." },
+  { title: "Diário de Decisões", desc: "Páginas de registro diário para documentar cada decisão." },
+  { title: "Mapa de Valores Pessoais", desc: "Exercício estruturado para identificar os 5 valores centrais." },
+  { title: "Protocolo Anti-Travamento", desc: "Roteiro de 4 perguntas para usar em tempo real." },
+  { title: "Checklist de Encerramento — Dia 30", desc: "Avaliação final para medir o quanto mudou." },
 ];
 
 function Entregaveis() {
   return (
-    <section className="section-light py-12 md:py-28">
+    <section className="section-light py-24 md:py-28">
       <Container>
         <div className="grid items-end gap-10 md:grid-cols-[1fr_auto] md:gap-16">
           <div>
@@ -559,20 +597,14 @@ function Entregaveis() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.04 }}
-                className="flex items-start justify-between gap-6 rounded-2xl border border-[var(--color-hairline)] bg-[var(--color-surface-raised)] p-5"
+                className="flex items-start gap-4 rounded-2xl border border-[var(--color-hairline)] bg-[var(--color-surface-raised)] p-5"
               >
-                <div className="flex items-start gap-4">
-                  <div className="grid size-9 shrink-0 place-items-center rounded-full bg-[var(--color-plum)]/10 text-[var(--color-plum)]">
-                    <Check className="size-4" />
-                  </div>
-                  <div>
-                    <div className="text-[15px] font-medium">{e.title}</div>
-                    <p className="mt-1 text-[13px] leading-relaxed text-[var(--color-ink-soft)]">{e.desc}</p>
-                  </div>
+                <div className="grid size-9 shrink-0 place-items-center rounded-full bg-[var(--color-plum)]/10 text-[var(--color-plum)]">
+                  <Check className="size-4" />
                 </div>
-                <div className="shrink-0 text-right">
-                  <div className="text-[11px] uppercase tracking-[0.18em] text-[var(--color-muted-foreground)]">Valor</div>
-                  <div className="font-display text-lg text-[var(--color-plum)]">{e.value}</div>
+                <div>
+                  <div className="text-[15px] font-medium">{e.title}</div>
+                  <p className="mt-1 text-[13px] leading-relaxed text-[var(--color-ink-soft)]">{e.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -587,30 +619,12 @@ function Entregaveis() {
 
 function Bonus() {
   const bonuses = [
-    {
-      img: bonusImgs[0],
-      tag: "Bônus 01",
-      title: "30 Frases do Desafio",
-      desc: "Uma frase por dia para os 30 dias do desafio.",
-      value: "R$ 47",
-    },
-    {
-      img: bonusImgs[1],
-      tag: "Bônus 02",
-      title: "Guia da Conversa Difícil",
-      desc: "Roteiro para as 4 conversas que mulheres mais evitam.",
-      value: "R$ 97",
-    },
-    {
-      img: bonusImgs[2],
-      tag: "Bônus 03",
-      title: "Mapa dos Valores",
-      desc: "Exercício guiado em 5 etapas para identificar seus valores centrais.",
-      value: "R$ 87",
-    },
+    { img: bonusImgs[0], tag: "Bônus 01", title: "30 Frases do Desafio", desc: "Uma frase por dia para os 30 dias do desafio." },
+    { img: bonusImgs[1], tag: "Bônus 02", title: "Guia da Conversa Difícil", desc: "Roteiro para as 4 conversas que mulheres mais evitam." },
+    { img: bonusImgs[2], tag: "Bônus 03", title: "Mapa dos Valores", desc: "Exercício guiado em 5 etapas para identificar seus valores centrais." },
   ];
   return (
-    <section className="section-light py-12 md:py-28">
+    <section className="section-light py-24 md:py-28">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <Eyebrow>Bônus exclusivos</Eyebrow>
@@ -633,167 +647,10 @@ function Bonus() {
                   <span className="text-[10px] uppercase tracking-[0.22em] text-[var(--color-gold)]">{b.tag}</span>
                   <h3 className="font-display mt-2 text-2xl leading-tight">{b.title}</h3>
                   <p className="mt-3 text-[14px] leading-relaxed text-[var(--color-ink-soft)]">{b.desc}</p>
-                  <div className="mt-4 text-sm">
-                    Valor: <span className="font-medium text-[var(--color-plum)]">{b.value}</span>
-                  </div>
                 </div>
               </div>
             </article>
           ))}
-        </div>
-      </Container>
-    </section>
-  );
-}
-
-/* ---------- DEPOIMENTOS ---------- */
-
-const depoimentos = [
-  {
-    name: "Juliana M.",
-    age: "38 anos, psicóloga clínica",
-    avatar: avatarImgs[0],
-    before:
-      "Sabia de cor cada padrão que precisava mudar. Mesmo assim, quando chegava a hora de decidir algo importante, travava.",
-    virada:
-      "Aplicou o Protocolo Anti-Travamento em uma decisão profissional que estava adiando há 4 meses.",
-    resultado:
-      "Tomou a decisão em 12 minutos, comunicou no mesmo dia. Foi a primeira vez que sentiu \"clareza sem ansiedade\".",
-  },
-  {
-    name: "Fernanda C.",
-    age: "31 anos, designer",
-    avatar: avatarImgs[1],
-    before:
-      "Vivia no ciclo de começar algo novo a cada 3 meses e abandonar antes de completar.",
-    virada:
-      "O Diagnóstico de Bloqueio identificou que ela se encaixava no padrão de Aprovação Antecipada.",
-    resultado:
-      "Completou os 30 dias pela primeira vez na vida e, no Dia 28, assinou contrato com um cliente que tinha medo de abordar.",
-  },
-  {
-    name: "Tatiane R.",
-    age: "44 anos, empreendedora",
-    avatar: avatarImgs[2],
-    before:
-      "Levava em média 3 semanas para decidir qualquer coisa que envolvesse dinheiro.",
-    virada:
-      "O Mapa de Valores Pessoais deu a ela um critério de decisão claro pela primeira vez.",
-    resultado:
-      "Encerrou duas parcerias que travavam o negócio e dobrou o faturamento mensal em 60 dias.",
-  },
-  {
-    name: "Renata S.",
-    age: "29 anos, enfermeira",
-    avatar: avatarImgs[3],
-    before:
-      "Sempre se descrevia como \"indecisa por natureza\". Aceitava plantões que não queria.",
-    virada:
-      "A tarefa do Dia 8 a forçou a dizer não para algo pequeno. Nada de errado aconteceu.",
-    resultado:
-      "Em 30 dias disse não para 11 situações. A culpa caiu de 9 para 3 em uma escala de 10.",
-  },
-];
-
-function Depoimentos() {
-  return (
-    <section id="depoimentos" className="section-light py-12 md:py-32">
-      <Container>
-        <div className="mx-auto max-w-2xl text-center">
-          <Eyebrow>Depoimentos</Eyebrow>
-          <h2 className="display mt-5 text-[34px] md:text-[46px]">
-            O que muda quando uma mulher para de pedir{" "}
-            <span className="font-italic-serif text-[var(--color-plum)]">permissão para si mesma.</span>
-          </h2>
-        </div>
-
-        <div className="mt-14 grid gap-6 md:grid-cols-2">
-          {depoimentos.map((d) => (
-            <motion.article
-              key={d.name}
-              initial={{ opacity: 0, y: 14 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.5 }}
-              className="rounded-2xl border border-[var(--color-hairline)] bg-[var(--color-surface-raised)] p-8"
-            >
-              <div className="flex items-center gap-3">
-                <div className="size-12 rounded-full bg-[var(--color-plum)] flex items-center justify-center shrink-0">
-                    <span className="text-white font-medium text-sm">{d.name.split(' ').map((n: string) => n[0]).slice(0,2).join('')}</span>
-                  </div>
-                <div>
-                  <div className="text-sm font-medium">{d.name}</div>
-                  <div className="text-xs text-[var(--color-muted-foreground)]">{d.age}</div>
-                </div>
-              </div>
-              <div className="mt-5 space-y-3 text-[14px] leading-relaxed text-[var(--color-ink-soft)]">
-                <p><span className="font-medium text-[var(--color-foreground)]">Antes:</span> {d.before}</p>
-                <p><span className="font-medium text-[var(--color-foreground)]">Virada:</span> {d.virada}</p>
-                <p className="rounded-xl bg-[var(--color-plum)]/8 p-4 text-[var(--color-foreground)]">
-                  <span className="font-medium">Resultado:</span> {d.resultado}
-                </p>
-              </div>
-            </motion.article>
-          ))}
-        </div>
-      </Container>
-    </section>
-  );
-}
-
-/* ---------- AUTORIDADE ---------- */
-
-function Autoridade() {
-  return (
-    <section className="section-light py-12 md:py-32">
-      <Container>
-        <div className="grid items-center gap-12 md:grid-cols-[0.9fr_1.1fr]">
-          <div className="relative order-2 md:order-1">
-            <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-[var(--color-plum)]/10 blur-2xl" />
-            <div className="overflow-hidden rounded-[1.5rem] shadow-float">
-              <img src={creatorImg} alt="Licia Santos" className="h-[560px] w-full object-cover" />
-            </div>
-            <div className="absolute -bottom-5 left-6 rounded-2xl bg-[var(--color-surface-raised)] px-5 py-4 shadow-float">
-              <div className="text-[11px] uppercase tracking-[0.2em] text-[var(--color-muted-foreground)]">
-                Quem criou o método
-              </div>
-              <div className="font-display mt-1 text-xl">Licia Santos</div>
-            </div>
-          </div>
-
-          <div className="order-1 md:order-2">
-            <Eyebrow>Sobre a criadora</Eyebrow>
-            <h2 className="display mt-5 text-[32px] md:text-[44px]">
-              Quem criou este método{" "}
-              <span className="font-italic-serif text-[var(--color-plum)]">e por quê.</span>
-            </h2>
-            <div className="mt-6 space-y-4 text-[15px] leading-relaxed text-[var(--color-ink-soft)]">
-              <p>
-                Durante anos eu tomei decisões que impactavam milhões de reais dentro de uma multinacional.
-              </p>
-              <p>
-                Mas existia uma área da minha vida onde eu continuava travando: as minhas próprias escolhas.
-                Eu analisava demais. Buscava a opinião de todo mundo. Tinha medo de errar.
-              </p>
-              <p>
-                Até perceber que o problema não era falta de inteligência, conhecimento ou capacidade.
-                Era falta de confiança.
-              </p>
-              <p>
-                Foi estudando tomada de decisão no mestrado, comportamento humano e Neurogestão que comecei
-                a entender por que tantas mulheres inteligentes se sentem presas, mesmo sabendo exatamente
-                o que deveriam fazer.
-              </p>
-              <p>
-                O Método Decide Agora nasceu dessa busca. Para ajudar mulheres que estão cansadas de pensar
-                demais, duvidar de si mesmas e adiar decisões importantes.
-              </p>
-              <p>
-                Porque a sua vida começa a mudar quando você para de esperar ter certeza absoluta e aprende
-                a confiar mais em quem você é.
-              </p>
-            </div>
-          </div>
         </div>
       </Container>
     </section>
@@ -825,19 +682,22 @@ function Suporte() {
   );
 }
 
-/* ---------- OFERTA / STACK ---------- */
+/* ---------- OFERTA / STACK (simplificada) ---------- */
 
 const stack = [
-  ["E-book Principal — Pare de Duvidar de Você", "R$ 197"],
-  ["Bônus 01. 30 Frases do Desafio", "R$ 47"],
-  ["Bônus 02. Guia da Conversa Difícil", "R$ 97"],
-  ["Bônus 03. Mapa dos Valores", "R$ 87"],
-  ["Recurso Extra. Cartão SOS Anti-Travamento", "R$ 27"],
+  "E-book Principal — 30 Dias de Decisão",
+  "Diagnóstico de Bloqueio Inicial",
+  "Diário de Decisões",
+  "Mapa de Valores Pessoais",
+  "Protocolo Anti-Travamento",
+  "Bônus 01. 30 Frases do Desafio",
+  "Bônus 02. Guia da Conversa Difícil",
+  "Bônus 03. Mapa dos Valores",
 ];
 
 function Oferta() {
   return (
-    <section id="oferta" className="section-dark relative overflow-hidden py-12 md:py-32">
+    <section id="oferta" className="section-dark relative overflow-hidden py-24 md:py-32">
       <div className="absolute inset-0 grain opacity-30" />
       <Container className="relative">
         <div className="mx-auto max-w-2xl text-center">
@@ -853,29 +713,22 @@ function Oferta() {
 
         <div className="mx-auto mt-14 max-w-3xl overflow-hidden rounded-3xl bg-[var(--color-surface-raised)]/10 backdrop-blur ring-1 ring-white/10">
           <ul>
-            {stack.map(([item, val], i) => (
+            {stack.map((item, i) => (
               <li
                 key={item}
-                className={`flex items-center justify-between px-6 py-4 text-[15px] md:px-8 ${
+                className={`flex items-center gap-3 px-6 py-4 text-[15px] md:px-8 ${
                   i < stack.length - 1 ? "border-b border-white/10" : ""
                 }`}
               >
-                <span className="flex items-center gap-3">
-                  <Check className="size-4 text-[var(--color-gold)]" />
-                  {item}
-                </span>
-                <span className="text-[var(--color-muted-foreground)] line-through">{val}</span>
+                <Check className="size-4 shrink-0 text-[var(--color-gold)]" />
+                {item}
               </li>
             ))}
-            <li className="flex items-center justify-between bg-white/5 px-6 py-5 md:px-8">
-              <span className="font-display text-xl">Valor total</span>
-              <span className="font-display text-xl text-[var(--color-muted-foreground)] line-through">R$ 455</span>
-            </li>
           </ul>
 
-          <div className="border-t border-white/10 bg-[#3d1238] p-8 text-center md:p-12">
+          <div className="border-t border-white/10 bg-[#3b1a35] p-8 text-center md:p-12">
             <div className="text-[11px] uppercase tracking-[0.22em] text-[var(--color-gold)]">
-              Preço hoje
+              Tudo isso por apenas
             </div>
             <div className="font-display mt-3 text-6xl md:text-7xl">R$ 97</div>
             <div className="mt-2 text-sm text-[var(--color-muted-foreground)]">
@@ -883,10 +736,10 @@ function Oferta() {
             </div>
             <div className="mt-8 flex justify-center">
               <a
-                href="https://pay.kiwify.com.br/t7S1be0"
+                href="#"
                 className="group inline-flex items-center gap-3 rounded-full bg-[var(--color-gold)] px-8 py-4 text-[15px] font-medium text-[var(--color-plum)] transition hover:-translate-y-[1px]"
               >
-                Quero começar meus 30 dias agora
+                Quero parar de ficar travada agora
                 <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
               </a>
             </div>
@@ -906,9 +759,9 @@ function Oferta() {
 
 function Garantia() {
   return (
-    <section className="section-light py-12 md:py-28">
+    <section className="section-light py-24 md:py-28">
       <Container>
-        <div className="grid items-center gap-10 rounded-3xl bg-[#ede5db] p-8 md:grid-cols-[auto_1fr] md:gap-14 md:p-14">
+        <div className="grid items-center gap-10 rounded-3xl bg-[var(--color-surface)] p-8 md:grid-cols-[auto_1fr] md:gap-14 md:p-14">
           <div className="mx-auto">
             <img src={garantiaImg} alt="Selo de garantia 7 dias" className="h-44 w-44 object-contain" />
           </div>
@@ -933,49 +786,22 @@ function Garantia() {
 /* ---------- FAQ ---------- */
 
 const faqs = [
-  {
-    q: "Não tenho muito tempo. Quanto tempo por dia preciso dedicar?",
-    a: "Entre 15 e 30 minutos por dia. Cada tarefa foi desenhada para caber na rotina de quem trabalha.",
-  },
-  {
-    q: "Já fiz vários cursos e nenhum funcionou. Por que este seria diferente?",
-    a: "Porque a maioria dos cursos ensina a entender seus padrões. Este treina você a agir dentro deles antes de eliminá-los.",
-  },
-  {
-    q: "E se eu travar em alguma tarefa e não conseguir continuar?",
-    a: "O Protocolo Anti-Travamento foi desenvolvido exatamente para esse momento. São 4 perguntas que você usa em tempo real.",
-  },
-  {
-    q: "Funciona para quem já faz terapia?",
-    a: "Sim. O desafio não substitui terapia: ele complementa.",
-  },
-  {
-    q: "Em quanto tempo vejo resultado?",
-    a: "As primeiras mudanças perceptíveis costumam aparecer entre o Dia 7 e o Dia 14.",
-  },
-  {
-    q: "E se não funcionar para mim?",
-    a: "Você tem 7 dias de garantia incondicional. Se decidir que não é para você, devolvo 100% do valor.",
-  },
+  { q: "Não tenho muito tempo. Quanto tempo por dia preciso dedicar?", a: "Entre 15 e 30 minutos por dia. Cada tarefa foi desenhada para caber na rotina de quem trabalha." },
+  { q: "Já fiz vários cursos e nenhum funcionou. Por que este seria diferente?", a: "Porque a maioria dos cursos ensina a entender seus padrões. Este treina você a agir dentro deles antes de eliminá-los." },
+  { q: "E se eu travar em alguma tarefa e não conseguir continuar?", a: "O Protocolo Anti-Travamento foi desenvolvido exatamente para esse momento. São 4 perguntas que você usa em tempo real." },
+  { q: "Funciona para quem já faz terapia?", a: "Sim. O desafio não substitui terapia: ele complementa." },
+  { q: "Em quanto tempo vejo resultado?", a: "As primeiras mudanças perceptíveis costumam aparecer entre o Dia 7 e o Dia 14." },
+  { q: "E se não funcionar para mim?", a: "Você tem 7 dias de garantia incondicional. Se decidir que não é para você, devolvo 100% do valor." },
 ];
 
 function FAQItem({ q, a, open, onClick }: { q: string; a: string; open: boolean; onClick: () => void }) {
   return (
     <div className="border-b border-[var(--color-hairline)]">
-      <button
-        onClick={onClick}
-        className="flex w-full items-center justify-between gap-6 py-6 text-left"
-      >
+      <button onClick={onClick} className="flex w-full items-center justify-between gap-6 py-6 text-left">
         <span className="font-display text-lg md:text-xl">{q}</span>
-        <ChevronDown
-          className={`size-5 shrink-0 text-[var(--color-plum)] transition-transform ${open ? "rotate-180" : ""}`}
-        />
+        <ChevronDown className={`size-5 shrink-0 text-[var(--color-plum)] transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
-      <div
-        className={`grid overflow-hidden transition-all duration-300 ${
-          open ? "grid-rows-[1fr] pb-6" : "grid-rows-[0fr]"
-        }`}
-      >
+      <div className={`grid overflow-hidden transition-all duration-300 ${open ? "grid-rows-[1fr] pb-6" : "grid-rows-[0fr]"}`}>
         <div className="min-h-0">
           <p className="max-w-3xl text-[15px] leading-relaxed text-[var(--color-ink-soft)]">{a}</p>
         </div>
@@ -987,7 +813,7 @@ function FAQItem({ q, a, open, onClick }: { q: string; a: string; open: boolean;
 function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
   return (
-    <section id="faq" className="section-light py-12 md:py-32">
+    <section id="faq" className="section-light py-24 md:py-32">
       <Container>
         <div className="grid gap-12 md:grid-cols-[0.7fr_1.3fr]">
           <div>
@@ -1016,7 +842,7 @@ function FAQ() {
 
 function CTAFinal() {
   return (
-    <section className="section-dark relative overflow-hidden py-14 md:py-36">
+    <section className="section-dark relative overflow-hidden py-28 md:py-36">
       <img src={doorwayImg} alt="" className="absolute inset-0 h-full w-full object-cover opacity-25" />
       <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-background)] via-[var(--color-background)]/85 to-[var(--color-background)]/60" />
       <Container className="relative">
@@ -1026,16 +852,15 @@ function CTAFinal() {
             A vida está passando enquanto você{" "}
             <span className="font-italic-serif text-[var(--color-gold)]">"se prepara".</span>
           </h2>
-          <p className="mt-6 text-[16px] leading-relaxed text-[var(--color-ink-soft)]">
-            Em 30 dias, você pode estar do outro lado dessa porta. Decidindo sem precisar pedir
-            permissão.
+          <p className="mt-6 text-[16px] leading-relaxed text-[var(--color-muted-foreground)]">
+            Em 30 dias, você pode estar do outro lado dessa porta. Decidindo sem precisar pedir permissão.
           </p>
           <div className="mt-10 flex flex-col items-center gap-5">
             <a
-              href="https://pay.kiwify.com.br/t7S1be0"
+              href="#oferta"
               className="group inline-flex items-center gap-3 rounded-full bg-[var(--color-gold)] px-9 py-5 text-[16px] font-medium text-[var(--color-plum)] transition hover:-translate-y-[1px]"
             >
-              Quero começar meus 30 dias agora
+              Quero parar de ficar travada agora
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
             </a>
             <div className="text-[13px] text-[var(--color-muted-foreground)]">
@@ -1053,14 +878,11 @@ function CTAFinal() {
 function Footer() {
   return (
     <footer className="section-light hairline-t py-12">
-      <Container className="flex flex-col items-center gap-6 text-center">
-        <img src={logoImg} alt="Decide Agora" className="h-24 w-auto" />
-        <p className="text-xs text-[var(--color-muted-foreground)]">
-          Ao continuar, você concorda com os{" "}
-          <a href="https://docs.google.com/document/d/1eJUnG-jSLtyqxlTaHvjvdx4dlSsCMiJJ/edit?usp=sharing&ouid=102952477424481436790&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" className="underline hover:text-[var(--color-plum)]">
-            termos de uso e política de privacidade
-          </a>.<br />
-          © {new Date().getFullYear()} Mulher que Decide. Todos os direitos reservados.
+      <Container className="flex flex-col items-center justify-between gap-6 md:flex-row">
+        <img src={logoImg} alt="Decide Agora" className="h-12 w-auto" />
+        <p className="text-center text-xs text-[var(--color-muted-foreground)]">
+          Ao continuar, você concorda com os termos de uso e a política de privacidade.
+          <br />© {new Date().getFullYear()} Mulher que Decide. Todos os direitos reservados.
         </p>
       </Container>
     </footer>
@@ -1075,14 +897,13 @@ function App() {
       <Nav />
       <Hero />
       <Dor />
-      <ProvaSocial1 />
+      <Autoridade />
+      <Depoimentos />
       <CTAMid />
       <Metodo />
       <ParaQuem />
       <Entregaveis />
       <Bonus />
-      <Depoimentos />
-      <Autoridade />
       <Suporte />
       <Oferta />
       <Garantia />
