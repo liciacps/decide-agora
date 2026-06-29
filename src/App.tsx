@@ -207,9 +207,8 @@ function Dor() {
         <div className="mx-auto max-w-3xl">
           <Eyebrow>O que ninguém te contou</Eyebrow>
           <h2 className="display mt-5 text-[34px] md:text-[46px]">
-            Você está cansada de ser{" "}
-            <span className="font-italic-serif text-[var(--color-gold)]">a pessoa mais difícil</span>{" "}
-            de convencer dentro da sua própria cabeça.
+            Você sabe exatamente o que deveria fazer.{" "}
+            <span className="font-italic-serif text-[var(--color-gold)]">Então por que continua travando?</span>
           </h2>
 
           <div className="mt-10 space-y-7 text-[17px] leading-[1.75] text-[var(--color-muted-foreground)]">
@@ -884,10 +883,10 @@ function App() {
       <Nav />
       <Hero />
       <Dor />
-      <Autoridade />
       <Depoimentos />
       <CTAMid />
       <Metodo />
+      <Autoridade />
       <ParaQuem />
       <Entregaveis />
       <Bonus />
