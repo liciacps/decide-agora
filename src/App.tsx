@@ -362,7 +362,7 @@ function Depoimentos() {
                 <div className="size-10 rounded-full bg-[var(--color-plum)] flex items-center justify-center shrink-0">
                   <span className="text-white font-medium text-xs">{d.iniciais}</span>
                 </div>
-                <div className="text-sm font-medium text-[var(--color-foreground)]">{d.nome}</div>
+                <div className="text-sm text-[var(--color-muted-foreground)]">Cliente do Método</div>
               </div>
             </motion.article>
           ))}
