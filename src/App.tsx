@@ -319,14 +319,17 @@ function Depoimentos() {
           {[
             {
               iniciais: "T.G.",
+              nome: "Tania G.",
               depoimento: "Eu simplesmente não conseguia pedir algo para comer. Sempre esperava alguém que estava comigo pedir antes para eu falar que queria igual. Hoje, por mais que escolha algo que não goste, ainda fico feliz por ter escolhido.",
             },
             {
-              iniciais: "L.D.",
+              iniciais: "S.C.",
+              nome: "Sueli C.",
               depoimento: "Passei anos em um relacionamento ruim porque não tinha coragem de decidir terminar. Hoje analiso as situações com a ferramenta 10/10/10 de forma muito mais confiante.",
             },
             {
               iniciais: "B.O.",
+              nome: "Beatriz O.",
               depoimento: "Pedia opinião para tudo — até se fazia ou não um curso. Não conseguia decidir coisas que só diziam respeito a mim. Hoje já tenho meus pensamentos alinhados, sem medo de errar.",
             },
           ].map((d) => (
@@ -341,10 +344,10 @@ function Depoimentos() {
               <Quote className="size-6 text-[var(--color-plum)]/40" />
               <p className="mt-5 text-[15px] leading-relaxed text-[var(--color-ink-soft)]">{d.depoimento}</p>
               <div className="mt-6 flex items-center gap-3 border-t border-[var(--color-hairline)] pt-5">
-                <div className="size-12 rounded-full bg-[var(--color-plum)] flex items-center justify-center shrink-0">
-                  <span className="text-white font-medium text-sm">{d.iniciais}</span>
+                <div className="size-10 rounded-full bg-[var(--color-plum)] flex items-center justify-center shrink-0">
+                  <span className="text-white font-medium text-xs">{d.iniciais}</span>
                 </div>
-                <div className="text-sm font-medium">{d.iniciais}</div>
+                <div className="text-sm font-medium text-[var(--color-foreground)]">{d.nome}</div>
               </div>
             </motion.article>
           ))}
