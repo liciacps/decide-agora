@@ -359,9 +359,7 @@ function Depoimentos() {
               <Quote className="size-6 text-[var(--color-plum)]/40" />
               <p className="mt-5 text-[15px] leading-relaxed text-[var(--color-ink-soft)]">{d.depoimento}</p>
               <div className="mt-6 flex items-center gap-3 border-t border-[var(--color-hairline)] pt-5">
-                <div className="size-10 rounded-full bg-[var(--color-plum)] flex items-center justify-center shrink-0">
-                  <span className="text-white font-medium text-xs">{d.iniciais}</span>
-                </div>
+                <div className="size-3 rounded-full bg-[var(--color-plum)] shrink-0" />
                 <div className="text-sm text-[var(--color-muted-foreground)]">Cliente do Método</div>
               </div>
             </motion.article>
