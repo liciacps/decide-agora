@@ -884,10 +884,10 @@ function App() {
       <Depoimentos />
       <CTAMid />
       <Metodo />
-      <Autoridade />
       <ParaQuem />
       <Entregaveis />
       <Bonus />
+      <Autoridade />
       <Suporte />
       <Oferta />
       <Garantia />
