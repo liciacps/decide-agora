@@ -299,7 +299,7 @@ function Autoridade() {
             </div>
             <div className="mt-8 grid grid-cols-3 gap-4">
               {[
-                { n: "8 anos", label: "em gestão corporativa" },
+                { n: "8 anos", label: "em indústria automotiva" },
                 { n: "Mestrado", label: "em tomada de decisão" },
                 { n: "Pós", label: "em neurogestão" },
               ].map((item) => (
