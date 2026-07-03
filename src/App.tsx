@@ -106,12 +106,12 @@ function Hero() {
         {/* Topo: título + foto */}
         <div className="grid items-center gap-12 md:grid-cols-[1.05fr_0.95fr]">
           <div className="fade-up">
-            <Eyebrow>Método Decide Agora · Treinamento Prático de 30 Dias</Eyebrow>
+            <Eyebrow>Treinamento prático para mulheres que querem decidir com confiança</Eyebrow>
             <h1 className="display display-tight mt-5 text-[34px] sm:text-[42px] md:text-[52px]">
               Você não nasceu indecisa.
             </h1>
             <p className="mt-3 text-[18px] sm:text-[20px] md:text-[22px] leading-snug text-[var(--color-ink-soft)]">
-              Você apenas nunca treinou a habilidade que constrói a confiança em si mesma.
+              Você apenas nunca treinou a habilidade que <span className="font-medium text-[var(--color-foreground)]">constrói a confiança</span> em si mesma.
             </p>
             <p className="mt-2 font-italic-serif text-[22px] sm:text-[26px] md:text-[30px] text-[var(--color-plum)] leading-snug">
               Essa habilidade chama-se decidir.
@@ -128,25 +128,10 @@ function Hero() {
               <p className="mt-3 text-[14px] font-medium text-[var(--color-foreground)]">
                 Você não precisa acreditar em mim. Só faça o exercício comigo durante dois minutos.
               </p>
-              <p className="mt-4 text-[15px] font-medium text-[var(--color-plum)]">👇 Assista ao vídeo abaixo.</p>
+              <p className="mt-5 text-[18px] font-semibold text-[var(--color-plum)]">👇 Assista ao vídeo abaixo.</p>
             </div>
 
-            {/* Botão */}
-            <div className="mt-8 flex flex-wrap items-center gap-5">
-              <PrimaryCTA href="https://pay.kiwify.com.br/t7S1be0">Quero aprender a decidir</PrimaryCTA>
-            </div>
-            <div className="mt-4 flex flex-wrap gap-4">
-              {[
-                "Acesso imediato após a compra",
-                "Garantia incondicional de 7 dias",
-                "Mais de 30 exercícios práticos — um por dia",
-              ].map((item) => (
-                <div key={item} className="flex items-center gap-2 text-[13px] text-[var(--color-ink-soft)]">
-                  <Check className="size-3.5 shrink-0 text-[var(--color-plum)]" />
-                  {item}
-                </div>
-              ))}
-            </div>
+
           </div>
 
           <div className="relative">
@@ -167,6 +152,23 @@ function Hero() {
         </div>
 
 
+
+        {/* Botão + bullets após o vídeo */}
+        <div className="mt-10 flex flex-col items-center gap-4">
+          <PrimaryCTA href="https://pay.kiwify.com.br/t7S1be0">Quero aprender a decidir</PrimaryCTA>
+          <div className="flex flex-wrap justify-center gap-4">
+            {[
+              "Acesso imediato após a compra",
+              "Garantia incondicional de 7 dias",
+              "Mais de 30 exercícios práticos — um por dia",
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-2 text-[13px] text-[var(--color-ink-soft)]">
+                <Check className="size-3.5 shrink-0 text-[var(--color-plum)]" />
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
 
         {/* Vídeo YouTube */}
         <div className="mt-4 overflow-hidden rounded-2xl shadow-float">
