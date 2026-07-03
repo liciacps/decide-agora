@@ -192,27 +192,29 @@ function Hero() {
         </div>
 
         {/* Seção de bullets abaixo do vídeo */}
-        <div className="mt-12 mx-auto max-w-2xl">
-          <p className="text-[17px] leading-relaxed text-[var(--color-ink-soft)]">
+        <div className="mt-10 rounded-3xl bg-[var(--color-plum)]/5 px-8 py-10 md:px-12">
+          <p className="text-[17px] leading-relaxed text-[var(--color-ink-soft)] max-w-2xl">
             Durante os próximos 30 dias, você vai desenvolver confiança através de exercícios práticos de poucos minutos por dia — para agir com mais segurança, reduzir o excesso de análise e parar de depender da aprovação dos outros.
           </p>
-          <ul className="mt-6 space-y-3 text-[15px] leading-relaxed text-[var(--color-ink-soft)]">
+          <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {[
-              "Pare de pedir opinião para todo mundo antes de agir.",
-              "Tome decisões sem esperar sentir certeza absoluta.",
-              "Reduza a ansiedade causada pelo excesso de análise.",
-              "Desenvolva confiança através da prática diária.",
-              "Aprenda ferramentas simples para destravar escolhas importantes.",
+              { icon: "🙅‍♀️", text: "Pare de pedir opinião para todo mundo antes de agir." },
+              { icon: "⚡", text: "Tome decisões sem esperar sentir certeza absoluta." },
+              { icon: "🧘‍♀️", text: "Reduza a ansiedade causada pelo excesso de análise." },
+              { icon: "💪", text: "Desenvolva confiança através da prática diária." },
+              { icon: "🔓", text: "Aprenda ferramentas simples para destravar escolhas importantes." },
             ].map((t) => (
-              <li key={t} className="flex items-start gap-3">
-                <Check className="mt-0.5 size-4 shrink-0 text-[var(--color-plum)]" />
-                <span>{t}</span>
+              <li key={t.text} className="flex items-start gap-3 rounded-2xl bg-white p-4 shadow-sm">
+                <span className="text-[20px] shrink-0">{t.icon}</span>
+                <span className="text-[14px] leading-relaxed text-[var(--color-ink-soft)]">{t.text}</span>
               </li>
             ))}
           </ul>
-          <p className="mt-6 text-[15px] font-medium text-[var(--color-plum)]">
-            Você não precisa de mais informação. Você precisa começar a treinar essa habilidade.
-          </p>
+          <div className="mt-8 rounded-2xl bg-[var(--color-plum)] px-6 py-5 text-center">
+            <p className="text-[16px] font-medium text-white">
+              Você não precisa de mais informação. Você precisa começar a treinar essa habilidade.
+            </p>
+          </div>
         </div>
 
       </Container>
