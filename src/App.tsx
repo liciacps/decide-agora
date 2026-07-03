@@ -119,17 +119,21 @@ function Hero() {
 
             {/* Chamada do vídeo */}
             <div className="mt-6 rounded-2xl bg-[var(--color-plum)]/6 p-5 border-l-4 border-[var(--color-plum)]">
-              <p className="text-[16px] font-medium text-[var(--color-foreground)]">
-                Eu quero te provar que decisão pode ser treinada.
+              <p className="text-[18px] font-medium text-[var(--color-foreground)] leading-snug">
+                Eu quero te provar<br />que decisão pode ser treinada.
               </p>
-              <p className="mt-2 text-[14px] leading-relaxed text-[var(--color-ink-soft)]">
-                Antes de te apresentar o método completo, assista ao vídeo abaixo. Em menos de 2 minutos, você vai aprender uma das ferramentas usadas dentro do Método Decide Agora para organizar uma situação que hoje parece confusa e sair com mais clareza e confiança. Você não precisa acreditar em mim. Só faça o exercício comigo durante dois minutos.
+              <p className="mt-3 text-[14px] leading-relaxed text-[var(--color-ink-soft)]">
+                Antes de conhecer o treinamento completo, em menos de 2 minutos você vai sentir como pequenas mudanças na forma de decidir podem reduzir a confusão mental e aumentar sua confiança.
               </p>
+              <p className="mt-3 text-[14px] font-medium text-[var(--color-foreground)]">
+                Você não precisa acreditar em mim. Só faça o exercício comigo durante dois minutos.
+              </p>
+              <p className="mt-4 text-[15px] font-medium text-[var(--color-plum)]">👇 Assista ao vídeo abaixo.</p>
             </div>
 
             {/* Botão */}
             <div className="mt-8 flex flex-wrap items-center gap-5">
-              <PrimaryCTA href="https://pay.kiwify.com.br/t7S1be0">Quero desenvolver minha confiança</PrimaryCTA>
+              <PrimaryCTA href="https://pay.kiwify.com.br/t7S1be0">Quero aprender a decidir</PrimaryCTA>
             </div>
             <div className="mt-4 flex flex-wrap gap-4">
               {[
@@ -162,17 +166,7 @@ function Hero() {
           </div>
         </div>
 
-        {/* Chamada antes do vídeo */}
-        <div className="mt-16 mx-auto max-w-2xl text-center">
-          <p className="text-[13px] uppercase tracking-[0.18em] text-[var(--color-muted-foreground)]">Antes de decidir se esse método é para você</p>
-          <h2 className="font-display mt-3 text-[28px] md:text-[36px] text-[var(--color-foreground)] leading-tight">
-            Faça este exercício comigo.
-          </h2>
-          <p className="mt-4 text-[16px] leading-relaxed text-[var(--color-ink-soft)]">
-            Em menos de 2 minutos você vai experimentar uma ferramenta usada dentro do Método Decide Agora.
-          </p>
-          <p className="mt-5 text-[18px] font-medium text-[var(--color-plum)]">👇 Assista ao vídeo.</p>
-        </div>
+
 
         {/* Vídeo YouTube */}
         <div className="mt-4 overflow-hidden rounded-2xl shadow-float">
