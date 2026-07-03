@@ -104,7 +104,7 @@ function Hero() {
       <Container>
         <div className="grid items-center gap-12 md:grid-cols-[1.05fr_0.95fr]">
           <div className="fade-up">
-            <Eyebrow>Método Decide Agora · Treinamento de 30 dias</Eyebrow>
+            <Eyebrow>Método Decide Agora · Treinamento Prático de 30 Dias</Eyebrow>
             <h1 className="display display-tight mt-5 text-[34px] sm:text-[42px] md:text-[52px]">
               Você não nasceu indecisa.
             </h1>
@@ -115,7 +115,7 @@ function Hero() {
               Confiança não aparece antes da decisão. Ela é construída toda vez que você decide agir.
             </p>
             <p className="mt-3 max-w-[560px] text-[15px] leading-relaxed text-[var(--color-ink-soft)]">
-              Durante os próximos 30 dias, você vai treinar sua tomada de decisão com exercícios práticos de poucos minutos por dia — para agir com mais segurança, reduzir o excesso de análise e parar de depender da aprovação dos outros.
+              Durante os próximos 30 dias, você vai desenvolver confiança através de exercícios práticos de poucos minutos por dia — para agir com mais segurança, reduzir o excesso de análise e parar de depender da aprovação dos outros.
             </p>
 
             <ul className="mt-8 space-y-3 text-[15px] leading-relaxed text-[var(--color-ink-soft)]">
@@ -138,7 +138,7 @@ function Hero() {
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-5">
-              <PrimaryCTA href="#metodo">Quero treinar minha tomada de decisão</PrimaryCTA>
+              <PrimaryCTA href="#metodo">Começar o treinamento agora</PrimaryCTA>
             </div>
             <div className="mt-4 flex flex-wrap gap-4">
               {[
@@ -153,18 +153,6 @@ function Hero() {
               ))}
             </div>
 
-            {/* Mini bio */}
-            <div className="mt-10 flex items-center gap-4 border-t border-[var(--color-plum)]/10 pt-8">
-              <img
-                src="/licia-foto.png"
-                alt="Licia Santos"
-                className="size-14 shrink-0 rounded-full object-cover shadow-md ring-2 ring-[var(--color-plum)]/20"
-              />
-              <div>
-                <p className="text-[14px] font-medium text-[var(--color-foreground)]">Licia Santos</p>
-                <p className="text-[13px] text-[var(--color-ink-soft)]">Engenheira, mestre em tomada de decisão e especialista em neurogestão</p>
-              </div>
-            </div>
           </div>
 
           <div className="relative">
@@ -177,9 +165,9 @@ function Hero() {
               />
             </div>
             <div className="absolute -bottom-5 -left-5 rounded-2xl bg-white px-5 py-4 shadow-xl">
-              <p className="text-[11px] uppercase tracking-widest text-[var(--color-muted-foreground)]">Treinamento</p>
+              <p className="text-[11px] uppercase tracking-widest text-[var(--color-muted-foreground)]">Método</p>
               <p className="mt-0.5 text-[15px] font-semibold text-[var(--color-foreground)]">Decide Agora</p>
-              <p className="text-[13px] text-[var(--color-plum)] font-medium">30 dias de prática diária</p>
+              <p className="text-[13px] text-[var(--color-plum)] font-medium">30 dias treinando a habilidade de decidir</p>
             </div>
           </div>
         </div>
@@ -191,7 +179,7 @@ function Hero() {
           </h2>
           <p className="mt-4 text-[16px] leading-relaxed text-[var(--color-ink-soft)]">
             Antes de te apresentar o método completo, assista ao vídeo abaixo.<br />
-            Em menos de 2 minutos, você vai aprender uma das ferramentas usadas dentro do Método Decide Agora para organizar uma decisão que hoje parece confusa.<br /><br />
+            Em menos de 2 minutos, você vai aprender uma das ferramentas usadas dentro do Método Decide Agora para organizar uma situação que hoje parece confusa e sair com mais clareza e confiança.<br /><br />
             <span className="font-medium text-[var(--color-foreground)]">Assista e faça o exercício junto comigo.</span>
           </p>
         </div>
@@ -207,6 +195,19 @@ function Hero() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
+          </div>
+        </div>
+
+        {/* Mini bio abaixo do vídeo */}
+        <div className="mt-6 flex items-center justify-center gap-4">
+          <img
+            src="/licia-foto.png"
+            alt="Licia Santos"
+            className="size-14 shrink-0 rounded-full object-cover shadow-md ring-2 ring-[var(--color-plum)]/20"
+          />
+          <div>
+            <p className="text-[14px] font-medium text-[var(--color-foreground)]">Licia Santos</p>
+            <p className="text-[13px] text-[var(--color-ink-soft)]">Engenheira, mestre em decisão e especialista em neurogestão</p>
           </div>
         </div>
       </Container>
@@ -365,17 +366,17 @@ function Depoimentos() {
           {[
             {
               iniciais: "T.G.",
-              nome: "Cliente do Método T.G.",
+              nome: "Aluna do Método T.G.",
               depoimento: "Eu simplesmente não conseguia pedir algo para comer. Sempre esperava alguém que estava comigo pedir antes para eu falar que queria igual. Hoje, por mais que escolha algo que não goste, ainda fico feliz por ter escolhido.",
             },
             {
               iniciais: "S.C.",
-              nome: "Cliente do Método S.C.",
+              nome: "Aluna do Método S.C.",
               depoimento: "Passei anos em um relacionamento ruim porque não tinha coragem de decidir terminar. Hoje consigo tomar decisões muito mais rápido usando a ferramenta 10/10/10.",
             },
             {
               iniciais: "B.O.",
-              nome: "Cliente do Método B.O.",
+              nome: "Aluna do Método B.O.",
               depoimento: "Pedia opinião para tudo — até se fazia ou não um curso. Não conseguia decidir coisas que só diziam respeito a mim. Hoje consigo decidir sem precisar pedir opinião para todo mundo.",
             },
           ].map((d) => (
@@ -391,7 +392,7 @@ function Depoimentos() {
               <p className="mt-5 text-[15px] leading-relaxed text-[var(--color-ink-soft)]">{d.depoimento}</p>
               <div className="mt-6 flex items-center gap-3 border-t border-[var(--color-hairline)] pt-5">
                 <div className="size-3 rounded-full bg-[var(--color-plum)] shrink-0" />
-                <div className="text-sm text-[var(--color-muted-foreground)]">Cliente do Método</div>
+                <div className="text-sm text-[var(--color-muted-foreground)]">Aluna do Método</div>
               </div>
             </motion.article>
           ))}
@@ -573,7 +574,7 @@ function ParaQuem() {
 /* ---------- ENTREGÁVEIS (sem valores individuais) ---------- */
 
 const entregaveis = [
-  { title: "E-book Principal — 30 Dias de Decisão", desc: "Guia completo com uma tarefa diária para cada um dos 30 dias." },
+  { title: "Método Decide Agora Principal — 30 Dias de Decisão", desc: "Guia completo com uma tarefa diária para cada um dos 30 dias." },
   { title: "Diagnóstico de Bloqueio Inicial", desc: "Questionário de 10 perguntas que identifica seu padrão de travamento." },
   { title: "Diário de Decisões", desc: "Páginas de registro diário para documentar cada decisão." },
   { title: "Mapa de Valores Pessoais", desc: "Exercício estruturado para identificar os 5 valores centrais." },
@@ -589,12 +590,12 @@ function Entregaveis() {
           <div>
             <Eyebrow>O que está incluso</Eyebrow>
             <h2 className="display mt-5 text-[34px] md:text-[46px]">
-              Tudo que você recebe{" "}
+              Tudo que você recebe ao entrar no treinamento{" "}
               <span className="font-italic-serif text-[var(--color-plum)]">no momento da compra.</span>
             </h2>
           </div>
           <div className="text-sm text-[var(--color-muted-foreground)]">
-            Acesso imediato, vitalício, em qualquer dispositivo.
+            Acesso imediato ao material digital. Vitalício, em qualquer dispositivo.
           </div>
         </div>
 
@@ -700,7 +701,7 @@ function Suporte() {
 /* ---------- OFERTA / STACK (simplificada) ---------- */
 
 const stack = [
-  "E-book Principal — 30 Dias de Decisão",
+  "Método Decide Agora Principal — 30 Dias de Decisão",
   "Diagnóstico de Bloqueio Inicial",
   "Diário de Decisões",
   "Mapa de Valores Pessoais",
@@ -722,7 +723,7 @@ function Oferta() {
             <span className="font-italic-serif text-[var(--color-gold)]">hoje.</span>
           </h2>
           <p className="mt-5 text-[15px] text-[var(--color-muted-foreground)]">
-            Acesso imediato. Vitalício. Em qualquer dispositivo.
+            Treinamento prático de 30 dias para desenvolver autoconfiança através das decisões.
           </p>
         </div>
 
@@ -802,7 +803,7 @@ function Garantia() {
 
 const faqs = [
   { q: "Não tenho muito tempo. Quanto tempo por dia preciso dedicar?", a: "Entre 15 e 30 minutos por dia. Cada tarefa foi desenhada para caber na rotina de quem trabalha." },
-  { q: "Já fiz vários cursos e nenhum funcionou. Por que este seria diferente?", a: "Porque a maioria dos cursos ensina a entender seus padrões. Este treina você a agir dentro deles antes de eliminá-los." },
+  { q: "O que exatamente vou receber?", a: "Você terá acesso imediato ao Método Decide Agora — um treinamento prático de 30 dias entregue em formato de e-book digital (PDF), com exercícios e ferramentas para aplicar no seu dia a dia. Formato: e-book digital (PDF). Entrega: imediata. Garantia: 7 dias." },
   { q: "E se eu travar em alguma tarefa e não conseguir continuar?", a: "O Protocolo Anti-Travamento foi desenvolvido exatamente para esse momento. São 4 perguntas que você usa em tempo real." },
   { q: "Funciona para quem já faz terapia?", a: "Sim. O desafio não substitui terapia: ele complementa." },
   { q: "Em quanto tempo vejo resultado?", a: "As primeiras mudanças perceptíveis costumam aparecer entre o Dia 7 e o Dia 14." },
