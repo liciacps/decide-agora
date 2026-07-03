@@ -199,12 +199,7 @@ function Hero() {
         </div>
 
         {/* Mini bio abaixo do vídeo */}
-        <div className="mt-6 flex items-center justify-center gap-4">
-          <img
-            src="/licia-foto.png"
-            alt="Licia Santos"
-            className="size-14 shrink-0 rounded-full object-cover shadow-md ring-2 ring-[var(--color-plum)]/20"
-          />
+        <div className="mt-6 flex items-center gap-4">
           <div>
             <p className="text-[14px] font-medium text-[var(--color-foreground)]">Licia Santos</p>
             <p className="text-[13px] text-[var(--color-ink-soft)]">Engenheira, mestre em decisão e especialista em neurogestão</p>
