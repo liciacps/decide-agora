@@ -105,10 +105,12 @@ function Hero() {
         <div className="grid items-center gap-12 md:grid-cols-[1.05fr_0.95fr]">
           <div className="fade-up">
             <Eyebrow>Método Decide Agora · Treinamento de 30 dias</Eyebrow>
-            <h1 className="display display-tight mt-5 text-[40px] sm:text-[52px] md:text-[62px]">
-              Você não nasceu indecisa.{" "}
-              <span className="font-italic-serif text-[var(--color-plum)]">Você apenas nunca aprendeu que tomar decisões é uma habilidade que pode ser treinada.</span>
+            <h1 className="display display-tight mt-5 text-[34px] sm:text-[42px] md:text-[52px]">
+              Você não nasceu indecisa.
             </h1>
+            <p className="mt-3 font-italic-serif text-[22px] sm:text-[26px] md:text-[30px] text-[var(--color-plum)] leading-snug">
+              Você apenas nunca treinou a habilidade que faz uma mulher confiar mais em si mesma: decidir.
+            </p>
             <p className="mt-6 max-w-[560px] text-[17px] leading-relaxed text-[var(--color-ink-soft)]">
               Confiança não aparece antes da decisão. Ela é construída toda vez que você decide agir.
             </p>
