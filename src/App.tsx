@@ -111,7 +111,7 @@ function Hero() {
               Você não nasceu indecisa.
             </h1>
             <p className="mt-3 text-[18px] sm:text-[20px] md:text-[22px] leading-snug text-[var(--color-ink-soft)]">
-              Você apenas nunca treinou a habilidade que faz uma mulher confiar em si mesma.
+              Você apenas nunca treinou a habilidade que constrói a confiança em si mesma.
             </p>
             <p className="mt-2 font-italic-serif text-[22px] sm:text-[26px] md:text-[30px] text-[var(--color-plum)] leading-snug">
               Essa habilidade chama-se decidir.
@@ -123,19 +123,19 @@ function Hero() {
                 Eu quero te provar que decisão pode ser treinada.
               </p>
               <p className="mt-2 text-[14px] leading-relaxed text-[var(--color-ink-soft)]">
-                Antes de te apresentar o método completo, assista ao vídeo abaixo. Em menos de 2 minutos, você vai aprender uma das ferramentas usadas dentro do Método Decide Agora para organizar uma situação que hoje parece confusa e sair com mais clareza e confiança. Você não precisa confiar em mim, apenas experimente.
+                Antes de te apresentar o método completo, assista ao vídeo abaixo. Em menos de 2 minutos, você vai aprender uma das ferramentas usadas dentro do Método Decide Agora para organizar uma situação que hoje parece confusa e sair com mais clareza e confiança. Você não precisa acreditar em mim. Só faça o exercício comigo durante dois minutos.
               </p>
             </div>
 
             {/* Botão */}
             <div className="mt-8 flex flex-wrap items-center gap-5">
-              <PrimaryCTA href="https://pay.kiwify.com.br/t7S1be0">Quero treinar minha tomada de decisão</PrimaryCTA>
+              <PrimaryCTA href="https://pay.kiwify.com.br/t7S1be0">Quero desenvolver minha confiança</PrimaryCTA>
             </div>
             <div className="mt-4 flex flex-wrap gap-4">
               {[
-                "Mais de 30 tarefas práticas — uma por dia",
                 "Acesso imediato após a compra",
                 "Garantia incondicional de 7 dias",
+                "Mais de 30 exercícios práticos — um por dia",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2 text-[13px] text-[var(--color-ink-soft)]">
                   <Check className="size-3.5 shrink-0 text-[var(--color-plum)]" />
@@ -163,10 +163,15 @@ function Hero() {
         </div>
 
         {/* Chamada antes do vídeo */}
-        <div className="mt-16 text-center">
-          <p className="font-medium text-[var(--color-foreground)] text-[16px]">
-            👇 Assista e faça o exercício junto comigo.
+        <div className="mt-16 mx-auto max-w-2xl text-center">
+          <p className="text-[13px] uppercase tracking-[0.18em] text-[var(--color-muted-foreground)]">Antes de decidir se esse método é para você</p>
+          <h2 className="font-display mt-3 text-[28px] md:text-[36px] text-[var(--color-foreground)] leading-tight">
+            Faça este exercício comigo.
+          </h2>
+          <p className="mt-4 text-[16px] leading-relaxed text-[var(--color-ink-soft)]">
+            Em menos de 2 minutos você vai experimentar uma ferramenta usada dentro do Método Decide Agora.
           </p>
+          <p className="mt-5 text-[18px] font-medium text-[var(--color-plum)]">👇 Assista ao vídeo.</p>
         </div>
 
         {/* Vídeo YouTube */}
