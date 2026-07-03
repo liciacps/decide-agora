@@ -153,23 +153,6 @@ function Hero() {
 
 
 
-        {/* Botão + bullets após o vídeo */}
-        <div className="mt-10 flex flex-col items-center gap-4">
-          <PrimaryCTA href="https://pay.kiwify.com.br/t7S1be0">Quero aprender a decidir</PrimaryCTA>
-          <div className="flex flex-wrap justify-center gap-4">
-            {[
-              "Acesso imediato após a compra",
-              "Garantia incondicional de 7 dias",
-              "Mais de 30 exercícios práticos — um por dia",
-            ].map((item) => (
-              <div key={item} className="flex items-center gap-2 text-[13px] text-[var(--color-ink-soft)]">
-                <Check className="size-3.5 shrink-0 text-[var(--color-plum)]" />
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Vídeo YouTube */}
         <div className="mt-4 overflow-hidden rounded-2xl shadow-float">
           <div className="relative aspect-video w-full">
@@ -215,6 +198,21 @@ function Hero() {
             <p className="text-[16px] font-medium text-white">
               Você não precisa de mais informação. Você precisa começar a treinar essa habilidade.
             </p>
+          </div>
+          <div className="mt-8 flex flex-col items-center gap-4">
+            <PrimaryCTA href="https://pay.kiwify.com.br/t7S1be0">Quero aprender a decidir</PrimaryCTA>
+            <div className="flex flex-wrap justify-center gap-4">
+              {[
+                "Acesso imediato após a compra",
+                "Garantia incondicional de 7 dias",
+                "Mais de 30 exercícios práticos — um por dia",
+              ].map((item) => (
+                <div key={item} className="flex items-center gap-2 text-[13px] text-[var(--color-ink-soft)]">
+                  <Check className="size-3.5 shrink-0 text-[var(--color-plum)]" />
+                  {item}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
