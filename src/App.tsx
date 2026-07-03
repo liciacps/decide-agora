@@ -106,7 +106,7 @@ function Hero() {
         {/* Topo: título + foto */}
         <div className="grid items-center gap-12 md:grid-cols-[1.05fr_0.95fr]">
           <div className="fade-up">
-            <Eyebrow>Treinamento prático para mulheres que querem decidir com confiança</Eyebrow>
+            <Eyebrow><span className="text-[10px]">Treinamento prático para mulheres que querem decidir com confiança</span></Eyebrow>
             <h1 className="display display-tight mt-5 text-[34px] sm:text-[42px] md:text-[52px]">
               Você não nasceu indecisa.
             </h1>
@@ -123,10 +123,12 @@ function Hero() {
                 Eu quero te provar<br />que decisão pode ser treinada.
               </p>
               <p className="mt-3 text-[14px] leading-relaxed text-[var(--color-ink-soft)]">
-                Antes de conhecer o treinamento completo, em menos de 2 minutos você vai sentir como pequenas mudanças na forma de decidir podem reduzir a confusão mental e aumentar sua confiança.
+                Antes de conhecer o treinamento completo...<br />
+                Em menos de 2 minutos você vai experimentar uma ferramenta usada dentro do Método Decide Agora.
               </p>
-              <p className="mt-3 text-[14px] font-medium text-[var(--color-foreground)]">
-                Você não precisa acreditar em mim. Só faça o exercício comigo durante dois minutos.
+              <p className="mt-3 text-[14px] text-[var(--color-ink-soft)]">
+                Você não precisa acreditar em mim.<br />
+                Só faça o exercício comigo.
               </p>
               <p className="mt-5 text-[18px] font-semibold text-[var(--color-plum)]">👇 Assista ao vídeo abaixo.</p>
             </div>
@@ -146,7 +148,7 @@ function Hero() {
             <div className="absolute -bottom-5 -left-5 rounded-2xl bg-white px-5 py-4 shadow-xl">
               <p className="text-[11px] uppercase tracking-widest text-[var(--color-muted-foreground)]">Método</p>
               <p className="mt-0.5 text-[15px] font-semibold text-[var(--color-foreground)]">Decide Agora</p>
-              <p className="text-[13px] text-[var(--color-plum)] font-medium">30 dias treinando a habilidade de decidir</p>
+              <p className="text-[13px] text-[var(--color-plum)] font-medium">Alguns minutos por dia. Mais confiança para decidir.</p>
             </div>
           </div>
         </div>
@@ -181,12 +183,12 @@ function Hero() {
             Durante os próximos 30 dias, você vai desenvolver confiança através de exercícios práticos de poucos minutos por dia — para agir com mais segurança, reduzir o excesso de análise e parar de depender da aprovação dos outros.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
-            {[
-              { icon: "🙅‍♀️", text: "Pare de pedir opinião para todo mundo antes de agir." },
-              { icon: "⚡", text: "Tome decisões sem esperar sentir certeza absoluta." },
+            [
+              { icon: "🙅‍♀️", text: "Pare de depender da opinião dos outros para decidir." },
+              { icon: "⚡", text: "Tome decisões mesmo sem sentir certeza absoluta." },
               { icon: "🧘‍♀️", text: "Reduza a ansiedade causada pelo excesso de análise." },
-              { icon: "💪", text: "Desenvolva confiança através da prática diária." },
-              { icon: "🔓", text: "Aprenda ferramentas simples para destravar escolhas importantes." },
+              { icon: "💪", text: "Desenvolva confiança praticando pequenas decisões todos os dias." },
+              { icon: "🔓", text: "Transforme decisão em uma habilidade automática." },
             ].map((t) => (
               <li key={t.text} className="flex items-start gap-3 rounded-2xl bg-white p-4 shadow-sm">
                 <span className="text-[20px] shrink-0">{t.icon}</span>
@@ -194,24 +196,34 @@ function Hero() {
               </li>
             ))}
           </ul>
-          <div className="mt-8 rounded-2xl bg-[var(--color-plum)] px-6 py-5 text-center">
-            <p className="text-[16px] font-medium text-white">
-              Você não precisa de mais informação. Você precisa começar a treinar essa habilidade.
+          <div className="mt-8 rounded-2xl bg-[var(--color-plum)] px-6 py-7 text-center">
+            <p className="text-[20px] font-medium text-white leading-snug">
+              Você não precisa de mais informação.<br />
+              Você precisa treinar a habilidade de decidir.
             </p>
-          </div>
-          <div className="mt-8 flex flex-col items-center gap-4">
-            <PrimaryCTA href="https://pay.kiwify.com.br/t7S1be0">Quero aprender a decidir</PrimaryCTA>
-            <div className="flex flex-wrap justify-center gap-4">
-              {[
-                "Acesso imediato após a compra",
-                "Garantia incondicional de 7 dias",
-                "Mais de 30 exercícios práticos — um por dia",
-              ].map((item) => (
-                <div key={item} className="flex items-center gap-2 text-[13px] text-[var(--color-ink-soft)]">
-                  <Check className="size-3.5 shrink-0 text-[var(--color-plum)]" />
-                  {item}
-                </div>
-              ))}
+            <p className="mt-4 text-[15px] text-white/80">
+              Se esse exercício já fez sentido para você, imagine o que acontece depois de 30 dias praticando.
+            </p>
+            <div className="mt-6 flex flex-col items-center gap-4">
+              <a
+                href="https://pay.kiwify.com.br/t7S1be0"
+                className="group inline-flex items-center justify-center gap-3 rounded-full bg-white px-9 py-5 text-[17px] font-medium text-[var(--color-plum)] transition hover:-translate-y-[1px] hover:shadow-lg"
+              >
+                Quero aprender a decidir
+                <ArrowRight className="size-5 transition-transform group-hover:translate-x-0.5" />
+              </a>
+              <div className="flex flex-wrap justify-center gap-4">
+                {[
+                  "Acesso imediato",
+                  "Garantia de 7 dias",
+                  "Mais de 30 exercícios práticos",
+                ].map((item) => (
+                  <div key={item} className="flex items-center gap-2 text-[13px] text-white/70">
+                    <Check className="size-3.5 shrink-0 text-white/70" />
+                    {item}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
