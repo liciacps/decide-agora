@@ -108,8 +108,11 @@ function Hero() {
             <h1 className="display display-tight mt-5 text-[34px] sm:text-[42px] md:text-[52px]">
               Você não nasceu indecisa.
             </h1>
-            <p className="mt-3 font-italic-serif text-[22px] sm:text-[26px] md:text-[30px] text-[var(--color-plum)] leading-snug">
-              Você apenas nunca treinou a habilidade que faz uma mulher confiar mais em si mesma: decidir.
+            <p className="mt-3 text-[18px] sm:text-[20px] md:text-[22px] leading-snug text-[var(--color-ink-soft)]">
+              Você apenas nunca treinou a habilidade que faz uma mulher confiar em si mesma.
+            </p>
+            <p className="mt-2 font-italic-serif text-[22px] sm:text-[26px] md:text-[30px] text-[var(--color-plum)] leading-snug">
+              Essa habilidade chama-se decidir.
             </p>
             <p className="mt-6 max-w-[560px] text-[17px] leading-relaxed text-[var(--color-ink-soft)]">
               Confiança não aparece antes da decisão. Ela é construída toda vez que você decide agir.
@@ -138,7 +141,7 @@ function Hero() {
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-5">
-              <PrimaryCTA href="#metodo">Começar o treinamento agora</PrimaryCTA>
+              <PrimaryCTA href="#metodo">Quero treinar minha tomada de decisão</PrimaryCTA>
             </div>
             <div className="mt-4 flex flex-wrap gap-4">
               {[
@@ -178,9 +181,10 @@ function Hero() {
             Eu quero te provar que decisão pode ser treinada.
           </h2>
           <p className="mt-4 text-[16px] leading-relaxed text-[var(--color-ink-soft)]">
-            Antes de te apresentar o método completo, assista ao vídeo abaixo.<br />
-            Em menos de 2 minutos, você vai aprender uma das ferramentas usadas dentro do Método Decide Agora para organizar uma situação que hoje parece confusa e sair com mais clareza e confiança.<br /><br />
-            <span className="font-medium text-[var(--color-foreground)]">Assista e faça o exercício junto comigo.</span>
+            Antes de te apresentar o método completo, assista ao vídeo abaixo. Em menos de 2 minutos, você vai aprender uma das ferramentas usadas dentro do Método Decide Agora para organizar uma situação que hoje parece confusa e sair com mais clareza e confiança. Você não precisa confiar em mim, apenas experimente.
+          </p>
+          <p className="mt-5 font-medium text-[var(--color-foreground)] text-[16px]">
+            👇 Assista e faça o exercício junto comigo.
           </p>
         </div>
 
@@ -198,8 +202,13 @@ function Hero() {
           </div>
         </div>
 
-        {/* Mini bio abaixo do vídeo */}
-        <div className="mt-6 flex items-center gap-4">
+        {/* Explicação do método + mini bio abaixo do vídeo */}
+        <div className="mt-8 mx-auto max-w-2xl text-center">
+          <p className="text-[17px] leading-relaxed text-[var(--color-ink-soft)]">
+            <span className="font-medium text-[var(--color-foreground)]">O Método Decide Agora</span> é um treinamento prático de 30 dias para desenvolver autoconfiança através das decisões.
+          </p>
+        </div>
+        <div className="mt-4 flex items-center gap-3">
           <div>
             <p className="text-[14px] font-medium text-[var(--color-foreground)]">Licia Santos</p>
             <p className="text-[13px] text-[var(--color-ink-soft)]">Engenheira, mestre em decisão e especialista em neurogestão</p>
