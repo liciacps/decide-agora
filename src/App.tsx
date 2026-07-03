@@ -104,38 +104,41 @@ function Hero() {
       <Container>
         <div className="grid items-center gap-12 md:grid-cols-[1.05fr_0.95fr]">
           <div className="fade-up">
-            <Eyebrow>E-book · Método Decide Agora</Eyebrow>
+            <Eyebrow>Método Decide Agora · Treinamento de 30 dias</Eyebrow>
             <h1 className="display display-tight mt-5 text-[40px] sm:text-[52px] md:text-[62px]">
-              Cansada de ficar{" "}
-              <span className="font-italic-serif text-[var(--color-plum)]">travada</span>{" "}
-              e não conseguir tomar decisões?
+              Você não nasceu indecisa.{" "}
+              <span className="font-italic-serif text-[var(--color-plum)]">Você apenas nunca aprendeu que tomar decisões é uma habilidade que pode ser treinada.</span>
             </h1>
             <p className="mt-6 max-w-[560px] text-[17px] leading-relaxed text-[var(--color-ink-soft)]">
-              Pare de esperar sentir certeza para agir.<br /><br />
-              Em apenas 30 dias você aprende a decidir com confiança — sem medo de errar e sem precisar da aprovação de ninguém.
+              Confiança não aparece antes da decisão. Ela é construída toda vez que você decide agir.
+            </p>
+            <p className="mt-3 max-w-[560px] text-[15px] leading-relaxed text-[var(--color-ink-soft)]">
+              Durante os próximos 30 dias, você vai treinar sua tomada de decisão com exercícios práticos de poucos minutos por dia — para agir com mais segurança, reduzir o excesso de análise e parar de depender da aprovação dos outros.
             </p>
 
             <ul className="mt-8 space-y-3 text-[15px] leading-relaxed text-[var(--color-ink-soft)]">
               {[
-                "Você demora dias para responder uma mensagem simples — com medo de errar.",
-                "Pesquisa tudo, pede opinião de todo mundo e mesmo assim não age.",
-                "Sabe o que quer, mas fica esperando o momento certo que nunca chega.",
+                "Pare de pedir opinião para todo mundo antes de agir.",
+                "Tome decisões sem esperar sentir certeza absoluta.",
+                "Reduza a ansiedade causada pelo excesso de análise.",
+                "Desenvolva confiança através da prática diária.",
+                "Aprenda ferramentas simples para destravar escolhas importantes.",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3">
-                  <span className="mt-2 size-1.5 shrink-0 rounded-full bg-[var(--color-plum)]" />
+                  <Check className="mt-0.5 size-4 shrink-0 text-[var(--color-plum)]" />
                   <span>{t}</span>
                 </li>
               ))}
             </ul>
 
             <p className="mt-6 text-[15px] font-medium text-[var(--color-plum)]">
-              Se você se identificou, este e-book foi feito para você.
+              Você não precisa de mais informação. Você precisa começar a treinar essa habilidade.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-5">
-              <PrimaryCTA href="#metodo">Quero decidir com confiança</PrimaryCTA>
+              <PrimaryCTA href="#metodo">Quero treinar minha tomada de decisão</PrimaryCTA>
             </div>
-            <div className="mt-4 space-y-2">
+            <div className="mt-4 flex flex-wrap gap-4">
               {[
                 "Mais de 30 tarefas práticas — uma por dia",
                 "Acesso imediato após a compra",
@@ -172,15 +175,27 @@ function Hero() {
               />
             </div>
             <div className="absolute -bottom-5 -left-5 rounded-2xl bg-white px-5 py-4 shadow-xl">
-              <p className="text-[11px] uppercase tracking-widest text-[var(--color-muted-foreground)]">E-book</p>
+              <p className="text-[11px] uppercase tracking-widest text-[var(--color-muted-foreground)]">Treinamento</p>
               <p className="mt-0.5 text-[15px] font-semibold text-[var(--color-foreground)]">Decide Agora</p>
-              <p className="text-[13px] text-[var(--color-plum)] font-medium">30 dias de método prático</p>
+              <p className="text-[13px] text-[var(--color-plum)] font-medium">30 dias de prática diária</p>
             </div>
           </div>
         </div>
 
+        {/* Bloco de transição antes do vídeo */}
+        <div className="mt-16 mx-auto max-w-2xl text-center">
+          <h2 className="font-display text-[24px] md:text-[30px] text-[var(--color-foreground)]">
+            Eu quero te provar que decisão pode ser treinada.
+          </h2>
+          <p className="mt-4 text-[16px] leading-relaxed text-[var(--color-ink-soft)]">
+            Antes de te apresentar o método completo, assista ao vídeo abaixo.<br />
+            Em menos de 2 minutos, você vai aprender uma das ferramentas usadas dentro do Método Decide Agora para organizar uma decisão que hoje parece confusa.<br /><br />
+            <span className="font-medium text-[var(--color-foreground)]">Assista e faça o exercício junto comigo.</span>
+          </p>
+        </div>
+
         {/* Vídeo YouTube */}
-        <div className="mt-20 overflow-hidden rounded-2xl shadow-float">
+        <div className="mt-8 overflow-hidden rounded-2xl shadow-float">
           <div className="relative aspect-video w-full">
             <iframe
               className="absolute inset-0 h-full w-full"
@@ -207,17 +222,37 @@ function Dor() {
         <div className="mx-auto max-w-3xl">
           <Eyebrow>O que ninguém te contou</Eyebrow>
           <h2 className="display mt-5 text-[34px] md:text-[46px]">
-            Você sabe exatamente o que deveria fazer.{" "}
-            <span className="font-italic-serif text-[var(--color-gold)]">Então por que continua travando?</span>
+            O maior erro de quem quer ser mais decidida.
           </h2>
 
-          <div className="mt-10 space-y-7 text-[17px] leading-[1.75] text-[var(--color-muted-foreground)]">
+          <div className="mt-10 space-y-6 text-[17px] leading-[1.75] text-[var(--color-muted-foreground)]">
             <p>
-              Não é preguiça.<br />
-              Você já tentou de tudo.
+              A maioria das mulheres acredita que precisa sentir confiança primeiro.<br />
+              Só depois agir.
             </p>
-            <ul className="space-y-1 pl-4 text-[16px]">
-              {["livros", "podcasts", "terapia", "cursos"].map(i => (
+            <p className="text-[var(--color-gold)] font-medium text-[18px]">
+              Mas funciona ao contrário.
+            </p>
+            <p>
+              Você ganha confiança porque decide.<br />
+              Não antes.
+            </p>
+            <p>
+              É como aprender a dirigir.<br />
+              Você não fica confiante lendo o manual.<br />
+              Você fica confiante <span className="font-medium text-[var(--color-primary-foreground)]">praticando.</span>
+            </p>
+            <p>
+              Com decisões acontece a mesma coisa.
+            </p>
+            <p>
+              O problema não é falta de inteligência.<br />
+              Não é falta de informação.<br />
+              Não é preguiça.
+            </p>
+            <p>Você já tentou de tudo:</p>
+            <ul className="space-y-1 pl-2 text-[16px]">
+              {["livros", "vídeos", "cursos", "terapia", "conselhos", "listas", "opinião de outras pessoas"].map(i => (
                 <li key={i} className="flex items-center gap-2">
                   <span className="size-1.5 rounded-full bg-[var(--color-gold)] shrink-0 inline-block" />
                   {i}
@@ -230,15 +265,9 @@ function Dor() {
               <span className="text-[var(--color-gold)] font-medium">você trava.</span>
             </p>
             <p>
-              Você adia a conversa importante por mais uma semana.<br />
-              Aceita o projeto abaixo do que vale porque "essa não é a hora certa".<br />
-              Muda o plano três vezes antes de começar.<br />
-              Pergunta pra mais uma pessoa o que ela acha — mesmo já sabendo o que quer.
-            </p>
-            <p>
-              O inimigo aqui não é você.<br />
-              É o jeito que você aprendeu a lidar com escolhas.<br />
-              Desde cedo você foi ensinada a esperar validação antes de agir.
+              Porque decisão não é só pensamento.<br />
+              É prática.<br />
+              <span className="font-medium text-[var(--color-primary-foreground)]">E prática precisa de treino.</span>
             </p>
           </div>
 
