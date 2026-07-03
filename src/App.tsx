@@ -114,6 +114,17 @@ function Hero() {
             <p className="mt-2 font-italic-serif text-[22px] sm:text-[26px] md:text-[30px] text-[var(--color-plum)] leading-snug">
               Essa habilidade chama-se decidir.
             </p>
+
+            {/* Chamada do vídeo logo abaixo do título */}
+            <div className="mt-6 rounded-2xl bg-[var(--color-plum)]/6 p-5 border-l-4 border-[var(--color-plum)]">
+              <p className="text-[16px] font-medium text-[var(--color-foreground)]">
+                Eu quero te provar que decisão pode ser treinada.
+              </p>
+              <p className="mt-2 text-[14px] leading-relaxed text-[var(--color-ink-soft)]">
+                Antes de te apresentar o método completo, assista ao vídeo abaixo. Em menos de 2 minutos, você vai aprender uma das ferramentas usadas dentro do Método Decide Agora para organizar uma situação que hoje parece confusa e sair com mais clareza e confiança. Você não precisa confiar em mim, apenas experimente.
+              </p>
+            </div>
+
             <p className="mt-6 max-w-[560px] text-[17px] leading-relaxed text-[var(--color-ink-soft)]">
               Confiança não aparece antes da decisão. Ela é construída toda vez que você decide agir.
             </p>
@@ -175,15 +186,9 @@ function Hero() {
           </div>
         </div>
 
-        {/* Bloco de transição antes do vídeo */}
-        <div className="mt-16 mx-auto max-w-2xl text-center">
-          <h2 className="font-display text-[24px] md:text-[30px] text-[var(--color-foreground)]">
-            Eu quero te provar que decisão pode ser treinada.
-          </h2>
-          <p className="mt-4 text-[16px] leading-relaxed text-[var(--color-ink-soft)]">
-            Antes de te apresentar o método completo, assista ao vídeo abaixo. Em menos de 2 minutos, você vai aprender uma das ferramentas usadas dentro do Método Decide Agora para organizar uma situação que hoje parece confusa e sair com mais clareza e confiança. Você não precisa confiar em mim, apenas experimente.
-          </p>
-          <p className="mt-5 font-medium text-[var(--color-foreground)] text-[16px]">
+        {/* Chamada antes do vídeo */}
+        <div className="mt-8 mx-auto max-w-2xl text-center">
+          <p className="font-medium text-[var(--color-foreground)] text-[16px]">
             👇 Assista e faça o exercício junto comigo.
           </p>
         </div>
