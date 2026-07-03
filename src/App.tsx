@@ -102,6 +102,8 @@ function Hero() {
   return (
     <section id="top" className="section-light relative overflow-hidden pt-6 pb-20 md:pt-8 md:pb-28">
       <Container>
+
+        {/* Topo: título + foto */}
         <div className="grid items-center gap-12 md:grid-cols-[1.05fr_0.95fr]">
           <div className="fade-up">
             <Eyebrow>Método Decide Agora · Treinamento Prático de 30 Dias</Eyebrow>
@@ -115,7 +117,7 @@ function Hero() {
               Essa habilidade chama-se decidir.
             </p>
 
-            {/* Chamada do vídeo logo abaixo do título */}
+            {/* Chamada do vídeo */}
             <div className="mt-6 rounded-2xl bg-[var(--color-plum)]/6 p-5 border-l-4 border-[var(--color-plum)]">
               <p className="text-[16px] font-medium text-[var(--color-foreground)]">
                 Eu quero te provar que decisão pode ser treinada.
@@ -125,34 +127,9 @@ function Hero() {
               </p>
             </div>
 
-            <p className="mt-6 max-w-[560px] text-[17px] leading-relaxed text-[var(--color-ink-soft)]">
-              Confiança não aparece antes da decisão. Ela é construída toda vez que você decide agir.
-            </p>
-            <p className="mt-3 max-w-[560px] text-[15px] leading-relaxed text-[var(--color-ink-soft)]">
-              Durante os próximos 30 dias, você vai desenvolver confiança através de exercícios práticos de poucos minutos por dia — para agir com mais segurança, reduzir o excesso de análise e parar de depender da aprovação dos outros.
-            </p>
-
-            <ul className="mt-8 space-y-3 text-[15px] leading-relaxed text-[var(--color-ink-soft)]">
-              {[
-                "Pare de pedir opinião para todo mundo antes de agir.",
-                "Tome decisões sem esperar sentir certeza absoluta.",
-                "Reduza a ansiedade causada pelo excesso de análise.",
-                "Desenvolva confiança através da prática diária.",
-                "Aprenda ferramentas simples para destravar escolhas importantes.",
-              ].map((t) => (
-                <li key={t} className="flex items-start gap-3">
-                  <Check className="mt-0.5 size-4 shrink-0 text-[var(--color-plum)]" />
-                  <span>{t}</span>
-                </li>
-              ))}
-            </ul>
-
-            <p className="mt-6 text-[15px] font-medium text-[var(--color-plum)]">
-              Você não precisa de mais informação. Você precisa começar a treinar essa habilidade.
-            </p>
-
+            {/* Botão */}
             <div className="mt-8 flex flex-wrap items-center gap-5">
-              <PrimaryCTA href="#metodo">Quero treinar minha tomada de decisão</PrimaryCTA>
+              <PrimaryCTA href="https://pay.kiwify.com.br/t7S1be0">Quero treinar minha tomada de decisão</PrimaryCTA>
             </div>
             <div className="mt-4 flex flex-wrap gap-4">
               {[
@@ -166,7 +143,6 @@ function Hero() {
                 </div>
               ))}
             </div>
-
           </div>
 
           <div className="relative">
@@ -187,14 +163,14 @@ function Hero() {
         </div>
 
         {/* Chamada antes do vídeo */}
-        <div className="mt-8 mx-auto max-w-2xl text-center">
+        <div className="mt-16 text-center">
           <p className="font-medium text-[var(--color-foreground)] text-[16px]">
             👇 Assista e faça o exercício junto comigo.
           </p>
         </div>
 
         {/* Vídeo YouTube */}
-        <div className="mt-8 overflow-hidden rounded-2xl shadow-float">
+        <div className="mt-4 overflow-hidden rounded-2xl shadow-float">
           <div className="relative aspect-video w-full">
             <iframe
               className="absolute inset-0 h-full w-full"
@@ -207,18 +183,38 @@ function Hero() {
           </div>
         </div>
 
-        {/* Explicação do método + mini bio abaixo do vídeo */}
-        <div className="mt-8 mx-auto max-w-2xl text-center">
-          <p className="text-[17px] leading-relaxed text-[var(--color-ink-soft)]">
-            <span className="font-medium text-[var(--color-foreground)]">O Método Decide Agora</span> é um treinamento prático de 30 dias para desenvolver autoconfiança através das decisões.
-          </p>
-        </div>
-        <div className="mt-4 flex items-center gap-3">
+        {/* Mini bio abaixo do vídeo */}
+        <div className="mt-5 flex items-center gap-3">
           <div>
             <p className="text-[14px] font-medium text-[var(--color-foreground)]">Licia Santos</p>
             <p className="text-[13px] text-[var(--color-ink-soft)]">Engenheira, mestre em decisão e especialista em neurogestão</p>
           </div>
         </div>
+
+        {/* Seção de bullets abaixo do vídeo */}
+        <div className="mt-12 mx-auto max-w-2xl">
+          <p className="text-[17px] leading-relaxed text-[var(--color-ink-soft)]">
+            Durante os próximos 30 dias, você vai desenvolver confiança através de exercícios práticos de poucos minutos por dia — para agir com mais segurança, reduzir o excesso de análise e parar de depender da aprovação dos outros.
+          </p>
+          <ul className="mt-6 space-y-3 text-[15px] leading-relaxed text-[var(--color-ink-soft)]">
+            {[
+              "Pare de pedir opinião para todo mundo antes de agir.",
+              "Tome decisões sem esperar sentir certeza absoluta.",
+              "Reduza a ansiedade causada pelo excesso de análise.",
+              "Desenvolva confiança através da prática diária.",
+              "Aprenda ferramentas simples para destravar escolhas importantes.",
+            ].map((t) => (
+              <li key={t} className="flex items-start gap-3">
+                <Check className="mt-0.5 size-4 shrink-0 text-[var(--color-plum)]" />
+                <span>{t}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-6 text-[15px] font-medium text-[var(--color-plum)]">
+            Você não precisa de mais informação. Você precisa começar a treinar essa habilidade.
+          </p>
+        </div>
+
       </Container>
     </section>
   );
