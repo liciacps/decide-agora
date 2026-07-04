@@ -106,7 +106,7 @@ function Hero() {
         {/* Topo: título + foto */}
         <div className="grid items-center gap-12 md:grid-cols-[1.05fr_0.95fr]">
           <div className="fade-up">
-            <Eyebrow><span className="text-[10px]">Treinamento prático para mulheres que querem decidir com confiança</span></Eyebrow>
+            <Eyebrow><span className="text-[10px]">Quero parar de duvidar de mim.</span></Eyebrow>
             <h1 className="display display-tight mt-5 text-[34px] sm:text-[42px] md:text-[52px]">
               Você não nasceu indecisa.
             </h1>
@@ -179,9 +179,9 @@ function Hero() {
 
         {/* Seção de bullets abaixo do vídeo */}
         <div className="mt-10 rounded-3xl bg-[var(--color-plum)]/5 px-8 py-10 md:px-12">
-          <p className="text-[17px] leading-relaxed text-[var(--color-ink-soft)] max-w-2xl">
-            Durante os próximos 30 dias, você vai desenvolver confiança através de exercícios práticos de poucos minutos por dia — para agir com mais segurança, reduzir o excesso de análise e parar de depender da aprovação dos outros.
-          </p>
+          <h3 className="text-[20px] font-medium text-[var(--color-foreground)] max-w-2xl">
+            Durante os próximos 30 dias, você vai treinar a habilidade que constrói sua autoconfiança.
+          </h3>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {[
               { icon: "🙅‍♀️", text: "Pare de depender da opinião dos outros para decidir." },
@@ -202,21 +202,21 @@ function Hero() {
               Você precisa treinar a habilidade de decidir.
             </p>
             <p className="mt-4 text-[15px] text-white/80">
-              Se esse exercício já fez sentido para você, imagine o que acontece depois de 30 dias praticando.
+              Se apenas um exercício já mudou a forma como você enxerga suas decisões, imagine o que pode acontecer depois de 30 dias de prática.
             </p>
             <div className="mt-6 flex flex-col items-center gap-4">
               <a
                 href="https://pay.kiwify.com.br/t7S1be0"
                 className="group inline-flex items-center justify-center gap-3 rounded-full bg-white px-9 py-5 text-[17px] font-medium text-[var(--color-plum)] transition hover:-translate-y-[1px] hover:shadow-lg"
               >
-                Quero aprender a decidir
+                Quero treinar minha confiança
                 <ArrowRight className="size-5 transition-transform group-hover:translate-x-0.5" />
               </a>
               <div className="flex flex-wrap justify-center gap-4">
                 {[
                   "Acesso imediato",
                   "Garantia de 7 dias",
-                  "Mais de 30 exercícios práticos",
+                  "30 exercícios práticos — 1 por dia",
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-2 text-[13px] text-white/70">
                     <Check className="size-3.5 shrink-0 text-white/70" />
