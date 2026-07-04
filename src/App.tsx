@@ -183,7 +183,7 @@ function Hero() {
             Durante os próximos 30 dias, você vai desenvolver confiança através de exercícios práticos de poucos minutos por dia — para agir com mais segurança, reduzir o excesso de análise e parar de depender da aprovação dos outros.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
-            [
+            {[
               { icon: "🙅‍♀️", text: "Pare de depender da opinião dos outros para decidir." },
               { icon: "⚡", text: "Tome decisões mesmo sem sentir certeza absoluta." },
               { icon: "🧘‍♀️", text: "Reduza a ansiedade causada pelo excesso de análise." },
