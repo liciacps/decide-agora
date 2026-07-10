@@ -160,7 +160,7 @@ function Hero() {
           <div className="relative aspect-video w-full">
             <iframe
               className="absolute inset-0 h-full w-full"
-              src="https://www.youtube.com/embed/JorseujVx_k"
+              src="https://www.youtube.com/embed/29Av1FAIM84"
               title="Como funciona o Método Decide Agora"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
