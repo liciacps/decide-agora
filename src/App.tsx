@@ -594,10 +594,8 @@ function ParaQuem() {
 const entregaveis = [
   { title: "Método Decide Agora Principal — 30 Dias de Decisão", desc: "Guia completo com uma tarefa diária para cada um dos 30 dias." },
   { title: "Diagnóstico de Bloqueio Inicial", desc: "Questionário de 10 perguntas que identifica seu padrão de travamento." },
-  { title: "Diário de Decisões", desc: "Páginas de registro diário para documentar cada decisão." },
-  { title: "Mapa de Valores Pessoais", desc: "Exercício estruturado para identificar os 5 valores centrais." },
-  { title: "Protocolo Anti-Travamento", desc: "Roteiro de 4 perguntas para usar em tempo real." },
-  { title: "Checklist de Encerramento — Dia 30", desc: "Avaliação final para medir o quanto mudou." },
+  { title: "Protocolo Anti-Travamento", desc: "Roteiro de 4 perguntas para usar em tempo real, quando uma decisão parecer impossível." },
+  { title: "Checklist de Encerramento — Dia 30", desc: "Avaliação final para medir o quanto mudou do Dia 1 ao Dia 30." },
 ];
 
 function Entregaveis() {
