@@ -762,7 +762,11 @@ function Oferta() {
             <div className="text-[11px] uppercase tracking-[0.22em] text-[var(--color-gold)]">
               Tudo isso por apenas
             </div>
-            <div className="font-display mt-3 text-6xl md:text-7xl">R$ 97</div>
+            <div className="mt-3 flex items-center justify-center gap-3">
+              <span className="text-[22px] line-through opacity-50 text-[var(--color-muted-foreground)]">R$ 197</span>
+              <span className="text-[13px] uppercase tracking-widest text-[var(--color-gold)] opacity-80">50% off</span>
+            </div>
+            <div className="font-display text-6xl md:text-7xl">R$ 97</div>
             <div className="mt-2 text-sm text-[var(--color-muted-foreground)]">
               à vista <span className="mx-1 opacity-50">·</span> ou 3x de R$ 35,90 no cartão
             </div>
